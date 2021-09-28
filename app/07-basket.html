@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<title>4 измерение</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<link href="./css/styles.css" rel="stylesheet">
+	<body>
+		<div class="wrapper wrapper_grey">
+			<header class="header">
+				<div class="panel">
+					<div class="container panel__container">
+						<div class="panel_row">
+							<div class="panel_contacts">
+								<div class="panel_contacts__item">
+									<div class="panel_location">
+										<span class="panel_location__text">Москва</span>
+										<svg class="panel_location__arrow">
+											<use xlink:href="./img/sprite.svg#arrow-mini"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="panel_contacts__item">
+									<a href="tel:+78004442474" class="panel_contacts__text">8 (800) 444-24-74</a>
+								</div>
+								<div class="panel_contacts__item">
+									<a href="#" class="panel_contacts__text panel_contacts__link">WhatsApp</a>
+								</div>
+								<div class="panel_contacts__item panel_contacts__item_call">
+									<span class="panel_contacts__text panel_contacts__link">Заказать звонок</span>
+								</div>
+							</div>
+
+							<a href="#" class="panel_account">
+								<svg class="panel_account__icon">
+									<use xlink:href="./img/sprite.svg#person"></use>
+								</svg>
+								<span class="panel_account__text">Личный кабинет</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="header_row">
+						<div class="header_logo">
+							<a href="/" class="header_logo__link">
+								<div class="logo">
+									<svg class="logo_icon">
+										<use xlink:href="./img/sprite.svg#logo"></use>
+									</svg>
+									<span class="logo_text">етвертое измерение</span>
+									<span class="logo_subtext">cеть часовых магазинов</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="inner">
+				<div class="container">
+					<div class="basket">
+						<div class="basket-head">
+							<div class="basket-head__col">
+								<h1 class="basket__title">Корзина</h1>
+							</div>
+							
+							<div class="basket-head__col">
+								<a href="#" class="link link_underlined basket-head__link">Назад к покупкам</a>
+							</div>
+						</div>
+
+						<div class="basket-group">
+							<table class="storage basket__table">
+								<thead>
+									<tr>
+										<th></th>
+										<th></th>
+										<th>Стоимость</th>
+										<th>Количество</th>
+										<th colspan="2">Итого</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="storage_photo">
+											<div class="storage__pic">
+												<img src="./pic/storage-1.jpg" alt="" class="img-contain">
+											</div>
+										</td>
+										<td class="storage_title">
+											<span class="storage__text storage__title">Часы Victoriox 241552.1 Officer`s</span>
+										</td>
+										<td class="storage_price">
+											<div class="storage__text">
+												<span class="storage__price storage__price_new">230 000 ₽</span>
+												<span class="storage__price storage__price_old">247 000 ₽</span>
+											</div>
+										</td>
+										<td class="storage_amount">
+											<div class="amount storage__amount" data-amount>
+												<i class="amount__btn amount__btn_minus is-disabled" data-amount-change="minus"></i>
+												<span class="amount__val" data-amount-value>1</span>
+												<i class="amount__btn amount__btn_plus" data-amount-change="plus"></i>
+												<input type="hidden" value="1" data-amount-input>
+											</div>
+										</td>
+										<td class="storage_total">
+											<div class="storage__text">
+												<span class="storage__price storage__price_new">230 000 ₽</span>
+												<span class="storage__price storage__price_old">247 000 ₽</span>
+											</div>
+										</td>
+										<td class="storage_remove">
+											<button class="storage-remove">
+												<svg class="storage-remove__icon">
+													<use xlink:href="./img/sprite.svg#remove"></use>
+												</svg>
+											</button>
+										</td>
+									</tr>
+
+									<tr>
+										<td class="storage_photo">
+											<div class="storage__pic">
+												<img src="./pic/storage-2.jpg" alt="" class="img-contain">
+											</div>
+										</td>
+										<td class="storage_title">
+											<span class="storage__text storage__title">Часы Tag Heuer<br> WAY1355BH0716 Aquarecer</span>
+										</td>
+										<td class="storage_price">
+											<div class="storage__text">
+												<span class="storage__price">47 830 ₽</span>
+											</div>
+										</td>
+										<td class="storage_amount">
+											<div class="amount storage__amount" data-amount>
+												<i class="amount__btn amount__btn_minus is-disabled" data-amount-change="minus"></i>
+												<span class="amount__val" data-amount-value>1</span>
+												<i class="amount__btn amount__btn_plus" data-amount-change="plus"></i>
+												<input type="hidden" value="1" data-amount-input>
+											</div>
+										</td>
+										<td class="storage_total">
+											<div class="storage__text">
+												<span class="storage__price">47 830 ₽</span>
+											</div>
+										</td>
+										<td class="storage_remove">
+											<button class="storage-remove">
+												<svg class="storage-remove__icon">
+													<use xlink:href="./img/sprite.svg#remove"></use>
+												</svg>
+											</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<div class="basket-total">
+								<div class="basket-total__discount">
+									<span class="basket-total__text basket-total__title">Общая скидка:</span>
+									<span class="basket-total__text basket-total__text_red">-17 000 ₽</span>
+								</div>
+
+								<span class="basket-total__text basket-total__title">Всего:</span>
+								<span class="basket-total__rc">277 849 ₽</span>
+							</div>
+
+							<div class="basket-discount">
+								<div class="basket-discount__row">
+									<span class="basket-discount__title">ВЫБЕРИТЕ СКИДКУ</span>
+
+									<div class="basket-discount__col basket-discount__col_list">
+										<div class="basket-discount-list">
+											<div class="basket-discount-list__item">
+												<label class="radio">
+													<input type="radio" name="discount-type" value="1" checked>
+													<span class="radio__text">Накопленные бонусные баллы</span>
+												</label>
+											</div>
+
+											<div class="basket-discount-list__item">
+												<label class="radio">
+													<input type="radio" name="discount-type" value="2">
+													<span class="radio__text">Бонусные баллы за заказ</span>
+												</label>
+											</div>
+
+											<div class="basket-discount-list__item">
+												<label class="radio">
+													<input type="radio" name="discount-type" value="3">
+													<span class="radio__text">Бонусные баллы за заказ</span>
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="basket-discount__col basket-discount__col_desc">
+										<span class="basket-discount__text">Для того, чтобы воспользоваться бонусными баллами</span>
+										<span class="basket-discount__text"><a href="#" class="link link_underlined">Войдите</a>, если покупали ранее, или</span>
+										<span class="basket-discount__text"><a href="#" class="link link_underlined">Зарегистрируйтесь</a> как постоянный покупатель.</span>
+										<span class="basket-discount__text">Этот заказ добавит 24 784 бонусных баллов.</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="basket-group">
+							<div class="basket-form">
+								<div class="basket-form__group">
+									<div class="basket-form-head">
+										<div class="basket-form-head__col">
+											<span class="basket-form__title">1. Контактные данные</span>
+										</div>
+
+										<div class="basket-form-head__col">
+											<a href="#" class="link link_underlined basket-form-head__link">Покупали ранее?</a>
+										</div>
+									</div>
+
+									<div class="basket-form-grid">
+										<div class="basket-form-grid__col">
+											<div class="field">
+												<label class="field__label">
+													<span class="field__title">Имя</span>
+													<input type="text" class="field__input" value="Максим">
+												</label>
+											</div>
+										</div>
+
+										<div class="basket-form-grid__col">
+											<div class="field">
+												<label class="field__label">
+													<span class="field__title">Телефон</span>
+													<input type="text" class="field__input" value="+7 (989) 852-66-10">
+												</label>
+											</div>
+										</div>
+
+										<div class="basket-form-grid__col">
+											<div class="field">
+												<label class="field__label">
+													<span class="field__title">Почта</span>
+													<input type="text" class="field__input" value="max@mail.com">
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="basket-form__group">
+									<div class="basket-form-head">
+										<div class="basket-form-head__col">
+											<span class="basket-form__title">2. Доставка</span>
+										</div>
+									</div>
+
+									<div class="basket-form-grid">
+										<div class="basket-form-grid__col">
+											<div class="field">
+												<label class="field__label">
+													<span class="field__title">Ваш город</span>
+													<input type="text" class="field__input" value="Москва">
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="basket-delivery" data-tabs>
+									<div class="basket-delivery-nav">
+										<div class="basket-delivery-nav__item" data-tab-open="1">
+											<span class="basket-delivery-nav__title">Доставка курьером</span>
+											<span class="basket-delivery-nav__subtext">Бесплатно</span>
+										</div>
+
+										<div class="basket-delivery-nav__item" data-tab-open="2">
+											<span class="basket-delivery-nav__title">Пункты выдачи</span>
+											<span class="basket-delivery-nav__subtext">Бесплатно</span>
+										</div>
+
+										<div class="basket-delivery-nav__item is-active" data-tab-open="3">
+											<span class="basket-delivery-nav__title">Самовывоз в Н. Новгороде</span>
+											<span class="basket-delivery-nav__subtext">Бесплатно</span>
+										</div>
+									</div>
+
+									<div class="basket-map">
+										<span class="basket-map__description">Выберите на карте пунтк выдачи, из которого будет удобно забрать самостоятельно.<br> Почтоматы работают с 8 до 24 часов. При поступлении в ПВЗ вам придёт смс уведомление.</span>
+
+										<div class="basket-map-grid">
+											<div class="basket-map-grid__col basket-map-grid__col_map">
+												<div class="basket-map__core">
+													<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3f8cb805ee3ae4dcd87f36a1273f6e63482aafc9a92312841fa0dac0377d459d&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+												</div>
+											</div>
+
+											<div class="basket-map-grid__col basket-map-grid__col_list">
+												<span class="basket-map__title">Выбор пункта выдачи</span>
+
+												<div class="basket-map-search">
+													<div class="field">
+														<label class="field__label">
+															<input type="text" class="field__input field__input_search" placeholder="Поиск по метро, улице и названию">
+														</label>
+
+														<div class="field-search">
+															<svg class="field-search__icon">
+																<use xlink:href="./img/sprite.svg#lens"></use>
+															</svg>
+														</div>
+													</div>
+												</div>
+
+												<div class="basket-map__content">
+													<div class="basket-map-list">
+														<div class="basket-map-list__item">
+															<label class="radio">
+																<input type="radio" name="delivery-point" value="1" checked>
+																<div class="radio__text">
+																	<span class="basket-map-list__text">
+																		<strong>Пункт выдачи посылок BoxBerry<br>
+																		Москва, Ленинградский просп., 44</strong><br>
+																		м. Динамо<br>
+																		Ежедневно, с 10:00 до 21:00
+																	</span>
+																	<span class="basket-map-list__text">
+																		<strong>Бесплатно</strong> — можно забрать 1 июня, в субботу
+																	</span>
+																	<span class="basket-map-list__text">
+																		<span>Срок хранения заказа — 30 дней</span>
+																	</span>
+																</div>
+															</label>
+														</div>
+
+														<div class="basket-map-list__item">
+															<label class="radio">
+																<input type="radio" name="delivery-point" value="2">
+																<div class="radio__text">
+																	<span class="basket-map-list__text">
+																		<strong>Пункт выдачи посылок BoxBerry<br>
+																		Москва, Ленинградский просп., 44</strong><br>
+																		м. Динамо<br>
+																		Ежедневно, с 10:00 до 21:00
+																	</span>
+																	<span class="basket-map-list__text">
+																		<strong>Бесплатно</strong> — можно забрать 1 июня, в субботу
+																	</span>
+																	<span class="basket-map-list__text">
+																		<span>Срок хранения заказа — 30 дней</span>
+																	</span>
+																</div>
+															</label>
+														</div>
+
+														<div class="basket-map-list__item">
+															<label class="radio">
+																<input type="radio" name="delivery-point" value="3">
+																<div class="radio__text">
+																	<span class="basket-map-list__text">
+																		<strong>Пункт выдачи посылок BoxBerry<br>
+																		Москва, Ленинградский просп., 44</strong><br>
+																		м. Динамо<br>
+																		Ежедневно, с 10:00 до 21:00
+																	</span>
+																	<span class="basket-map-list__text">
+																		<strong>Бесплатно</strong> — можно забрать 1 июня, в субботу
+																	</span>
+																	<span class="basket-map-list__text">
+																		<span>Срок хранения заказа — 30 дней</span>
+																	</span>
+																</div>
+															</label>
+														</div>
+
+														<div class="basket-map-list__item">
+															<label class="radio">
+																<input type="radio" name="delivery-point" value="4">
+																<div class="radio__text">
+																	<span class="basket-map-list__text">
+																		<strong>Пункт выдачи посылок BoxBerry<br>
+																		Москва, Ленинградский просп., 44</strong><br>
+																		м. Динамо<br>
+																		Ежедневно, с 10:00 до 21:00
+																	</span>
+																	<span class="basket-map-list__text">
+																		<strong>Бесплатно</strong> — можно забрать 1 июня, в субботу
+																	</span>
+																	<span class="basket-map-list__text">
+																		<span>Срок хранения заказа — 30 дней</span>
+																	</span>
+																</div>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="basket-map-m">
+										<button class="btn btn_md btn_red">Выбрать пункт выдачи</button>
+									</div>
+								</div>
+
+								<div class="basket-form__group">
+									<div class="basket-form-head">
+										<div class="basket-form-head__col">
+											<span class="basket-form__title">3. Оплата</span>
+										</div>
+									</div>
+
+									<div class="basket-form-grid">
+										<div class="basket-form-grid__col">
+											<label class="radio">
+												<input type="radio" name="payment-type" value="1" checked>
+												<span class="radio__text">Банковской картой<br> онлайн</span>
+											</label>
+										</div>
+
+										<div class="basket-form-grid__col">
+											<label class="radio">
+												<input type="radio" name="payment-type" value="2">
+												<span class="radio__text">Наличными или банковской<br> картой при получении</span>
+											</label>
+										</div>
+
+										<div class="basket-form-grid__col">
+											<label class="radio">
+												<input type="radio" name="payment-type" value="3">
+												<span class="radio__text">Яндекс.Деньги</span>
+											</label>
+										</div>
+
+										<div class="basket-form-grid__col">
+											<label class="radio">
+												<input type="radio" name="payment-type" value="4">
+												<span class="radio__text">
+													Онлайн в рассрочку<br> при оплате картами<br> «Халва» и «Совесть»
+
+													<div class="tooltip">
+														<i class="tooltip-icon"></i>
+														<div class="tooltip-drop">
+															<span class="tooltip-drop__text">Tooltip text here</span>
+														</div>
+													</div>
+												</span>
+											</label>
+										</div>
+
+										<div class="basket-form-grid__col">
+											<label class="radio">
+												<input type="radio" name="payment-type" value="5">
+												<span class="radio__text">
+													Онлайн в рассрочку<br> от Tinkoff
+
+													<div class="tooltip">
+														<i class="tooltip-icon"></i>
+														<div class="tooltip-drop">
+															<span class="tooltip-drop__text">Tooltip text here</span>
+														</div>
+													</div>
+												</span>
+											</label>
+										</div>
+
+										<div class="basket-form-grid__col">
+											<label class="radio">
+												<input type="radio" name="payment-type" value="6">
+												<span class="radio__text">
+													Онлайн кредит без переплат<br> от «Покупай со Сбербанком»
+
+													<div class="tooltip">
+														<i class="tooltip-icon"></i>
+														<div class="tooltip-drop">
+															<span class="tooltip-drop__text">Tooltip text here</span>
+														</div>
+													</div>
+												</span>
+											</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="basket-result">
+									<span class="basket-result__text basket-result__description">Стоимость доставки (самовывоз ТРЦ «Седьмое небо» — бесплатно, сумма заказа — 294 830 Р, размер скидки — 16 981 Р </span>
+
+									<span class="basket-result__price">Итого: 277 849 ₽</span>
+
+									<button class="btn btn_lg btn_red">Оформить заказ</button>
+
+									<span class="basket-result__text basket-result__privacy">Нажимая на кнопку «Оформить заказ» вы соглашаетесь<br> с условиями <a href="#" class="link link_underlined">оферты</a> и <a href="#" class="link link_underlined">политикой конфиденциальности</a>.</span>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer class="footer-s">
+				<div class="container">
+					<div class="footer-s__row">
+						<div class="footer-s-grid">
+							<div class="footer-s-grid__col">
+								<span class="footer-s__text">
+									© 1999-2020 «Четвёртое Измерение».<br>
+									Предложения на данном сайте не являются публичной офертой.
+								</span>
+							</div>
+
+							<div class="footer-s-grid__col">
+								<span class="footer-s__text">Дизайн сайта — <strong>RUFORMAT®</strong></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="./js/libs.js"></script>
+		<script src="./js/scripts.js"></script>
+	</body>
+</html>

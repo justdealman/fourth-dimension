@@ -1,0 +1,44 @@
+@colorBase: #171717;
+@colorBlack: #171717;
+@colorWhite: #ffffff;
+@colorGrey2: #E1E1E1;
+@colorGrey3: #A4A1A1;
+@colorGrey4: #666666;
+@colorRed: #E32119;
+@colorRedDark: #D21E17;
+@colorGreyBg: #F8F8F8;
+@colorDisabled: #B7B7B7;
+
+@SFProDisplay: ~'"SF Pro Display", sans-serif';
+
+@imgUrl: '../img';
+@picsUrl: '../pic';
+
+@notebook: ~'(max-width: 1679px)';
+@notebook-sm: ~'(max-width: 1374px)';
+@tablet: ~'(max-width: 1182px)';
+@mobile: ~'(max-width: 870px)';
+@small: ~'(max-width: 480px)';
+
+@is-desktop-drop: ~'(min-width: 1375px)';
+@is-mobile-drop: ~'(max-width: 1374px)';
+
+@contentWidth: 1122px;
+
+.placeholder(@color) {
+	::-webkit-input-placeholder {
+		color: @color;
+	}
+
+	:-moz-placeholder {
+		color: @color;
+	}
+
+	::-moz-placeholder {
+		color: @color;
+	}
+
+	:-ms-input-placeholder {
+		color: @color;
+	}
+}
