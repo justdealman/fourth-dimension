@@ -3008,8 +3008,7 @@
     }
 
     &-discount {
-        max-width: 700px;
-        text-align: center;
+        max-width: 800px;
         margin: 24px auto 30px;
 
         @media @tablet {
@@ -3039,7 +3038,6 @@
         }
 
         &__row {
-            display: inline-block;
             text-align: left;
             font-size: 0;
             margin: 0 -15px;
@@ -3062,10 +3060,6 @@
             }
 
             &_list {
-                @media @tablet {
-                    max-width: 330px;
-                }
-
                 @media @mobile {
                     max-width: none;
                     margin-bottom: 40px;
@@ -3073,10 +3067,6 @@
             }
 
             &_desc {
-                @media @tablet {
-                    max-width: 370px;
-                }
-
                 @media @mobile {
                     max-width: none;
                 }
@@ -3085,6 +3075,7 @@
 
         &__text {
             display: block;
+            max-width: 318px;
             font-size: 14px;
             line-height: 20px;
 
@@ -3099,6 +3090,46 @@
 
                 &:last-child {
                     margin-bottom: 0;
+                }
+            }
+        }
+
+        &__head {
+            margin-bottom: 20px;
+        }
+
+        &-form {
+            display: flex;
+            align-items: flex-end;
+            font-size: 0;
+            margin: 0 -10px;
+
+            @media @mini {
+                display: block;
+                max-width: 255px;
+                margin: 0;
+            }
+
+            &__col {
+                display: inline-block;
+                padding: 0 10px;
+
+                @media @mini {
+                    display: block;
+                    padding: 0;
+                }
+
+                &_input {
+                    flex: 1;
+                }
+
+                &_action {
+                    width: 180px;
+
+                    @media @mini {
+                        width: auto;
+                        margin-top: 20px;
+                    }
                 }
             }
         }
@@ -3332,6 +3363,42 @@
                 font-size: 14px;
                 line-height: 20px;
             }
+        }
+    }
+
+    &-address {
+        margin-top: 20px;
+
+        &__title {
+            display: block;
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+
+            @media @mobile {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__list {
+            max-width: 523px;
+        }
+
+        &__item {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__text {
+            display: block;
+            max-width: 551px;
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 20px;
         }
     }
 

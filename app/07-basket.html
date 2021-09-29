@@ -168,40 +168,116 @@
 								<span class="basket-total__rc">277 849 ₽</span>
 							</div>
 
-							<div class="basket-discount">
+							<div class="basket-discount" data-tabs>
 								<div class="basket-discount__row">
 									<span class="basket-discount__title">ВЫБЕРИТЕ СКИДКУ</span>
 
 									<div class="basket-discount__col basket-discount__col_list">
 										<div class="basket-discount-list">
 											<div class="basket-discount-list__item">
-												<label class="radio">
+												<label class="radio" data-tab-open="1">
 													<input type="radio" name="discount-type" value="1" checked>
 													<span class="radio__text">Накопленные бонусные баллы</span>
 												</label>
 											</div>
 
 											<div class="basket-discount-list__item">
-												<label class="radio">
+												<label class="radio" data-tab-open="2">
 													<input type="radio" name="discount-type" value="2">
 													<span class="radio__text">Бонусные баллы за заказ</span>
 												</label>
 											</div>
 
 											<div class="basket-discount-list__item">
-												<label class="radio">
+												<label class="radio" data-tab-open="3">
 													<input type="radio" name="discount-type" value="3">
-													<span class="radio__text">Бонусные баллы за заказ</span>
+													<span class="radio__text">Промо-код на скидку</span>
 												</label>
 											</div>
 										</div>
 									</div>
 
 									<div class="basket-discount__col basket-discount__col_desc">
-										<span class="basket-discount__text">Для того, чтобы воспользоваться бонусными баллами</span>
-										<span class="basket-discount__text"><a href="#" class="link link_underlined">Войдите</a>, если покупали ранее, или</span>
-										<span class="basket-discount__text"><a href="#" class="link link_underlined">Зарегистрируйтесь</a> как постоянный покупатель.</span>
-										<span class="basket-discount__text">Этот заказ добавит 24 784 бонусных баллов.</span>
+										<div class="is-opened" data-tab-target="1">
+											<div class="basket-discount__head">
+												<span class="basket-discount__text">
+													У вас 24 568 бонусных баллов. В данном заказе вы можете использовать максимум 4 551 балл.
+
+													<div class="tooltip">
+														<i class="tooltip-icon"></i>
+														<div class="tooltip-drop">
+															<span class="tooltip-drop__text">Tooltip text here</span>
+														</div>
+													</div>
+												</span>
+
+												<!-- Для неавторизованного пользователя
+												<span class="basket-discount__text">Для того, чтобы воспользоваться бонусными баллами</span>
+												<span class="basket-discount__text"><a href="#" class="link link_underlined">Войдите</a>, если покупали ранее, или</span>
+												<span class="basket-discount__text"><a href="#" class="link link_underlined">Зарегистрируйтесь</a> как постоянный покупатель.</span>
+												<span class="basket-discount__text">Этот заказ добавит 24 784 бонусных баллов.</span>
+												-->
+											</div>
+
+											<div class="basket-discount-form">
+												<div class="basket-discount-form__col basket-discount-form__col_input">
+													<div class="field">
+														<label class="field__label">
+															<span class="field__title">Бонусные баллы</span>
+															<input type="text" class="field__input" value="4551">
+														</label>
+													</div>
+												</div>
+												<div class="basket-discount-form__col basket-discount-form__col_action">
+													<button class="btn btn_sm btn_red">Применить</button>
+												</div>
+											</div>
+										</div>
+
+										<div data-tab-target="2">
+											<div class="basket-discount__head">
+												<span class="basket-discount__text">
+													Вам будет начислено 6 082 бонуса, вы можете потратить 3 140 бонусов сразу при покупке.
+
+													<div class="tooltip">
+														<i class="tooltip-icon"></i>
+														<div class="tooltip-drop">
+															<span class="tooltip-drop__text">Tooltip text here</span>
+														</div>
+													</div>
+												</span>
+											</div>
+
+											<div class="basket-discount-form">
+												<div class="basket-discount-form__col basket-discount-form__col_input">
+													<div class="field">
+														<label class="field__label">
+															<span class="field__title">Бонусные баллы</span>
+															<input type="text" class="field__input" value="3140">
+														</label>
+													</div>
+												</div>
+												<div class="basket-discount-form__col basket-discount-form__col_action">
+													<button class="btn btn_sm btn_red">Применить</button>
+												</div>
+											</div>
+										</div>
+
+										<div data-tab-target="3">
+											<div class="basket-discount-form">
+												<div class="basket-discount-form__col basket-discount-form__col_input">
+													<div class="field">
+														<label class="field__label">
+															<span class="field__title">Промо-код</span>
+															<input type="text" class="field__input" value="PROMOCODE2021">
+														</label>
+													</div>
+												</div>
+												<div class="basket-discount-form__col basket-discount-form__col_action">
+													<button class="btn btn_sm btn_red">Применить</button>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -271,7 +347,7 @@
 
 								<div class="basket-delivery" data-tabs>
 									<div class="basket-delivery-nav">
-										<div class="basket-delivery-nav__item" data-tab-open="1">
+										<div class="basket-delivery-nav__item is-active" data-tab-open="1">
 											<span class="basket-delivery-nav__title">Доставка курьером</span>
 											<span class="basket-delivery-nav__subtext">Бесплатно</span>
 										</div>
@@ -281,129 +357,167 @@
 											<span class="basket-delivery-nav__subtext">Бесплатно</span>
 										</div>
 
-										<div class="basket-delivery-nav__item is-active" data-tab-open="3">
+										<div class="basket-delivery-nav__item" data-tab-open="2">
 											<span class="basket-delivery-nav__title">Самовывоз в Н. Новгороде</span>
 											<span class="basket-delivery-nav__subtext">Бесплатно</span>
 										</div>
 									</div>
 
-									<div class="basket-map">
-										<span class="basket-map__description">Выберите на карте пунтк выдачи, из которого будет удобно забрать самостоятельно.<br> Почтоматы работают с 8 до 24 часов. При поступлении в ПВЗ вам придёт смс уведомление.</span>
+									<div class="is-opened" data-tab-target="1">
+										<div class="basket-address">
+											<span class="basket-address__title">Куда доставить</span>
 
-										<div class="basket-map-grid">
-											<div class="basket-map-grid__col basket-map-grid__col_map">
-												<div class="basket-map__core">
-													<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3f8cb805ee3ae4dcd87f36a1273f6e63482aafc9a92312841fa0dac0377d459d&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
-												</div>
-											</div>
-
-											<div class="basket-map-grid__col basket-map-grid__col_list">
-												<span class="basket-map__title">Выбор пункта выдачи</span>
-
-												<div class="basket-map-search">
+											<div class="basket-address__list">
+												<div class="basket-address__item">
 													<div class="field">
-														<label class="field__label">
-															<input type="text" class="field__input field__input_search" placeholder="Поиск по метро, улице и названию">
-														</label>
+														<label class="field__label field__label_has-tip">
+															<span class="field__title">Москва, ул. Курчатова, дом 3, кв. 54 </span>
+															<input type="text" class="field__input" value="Москва">
 
-														<div class="field-search">
-															<svg class="field-search__icon">
-																<use xlink:href="./img/sprite.svg#lens"></use>
-															</svg>
-														</div>
+															<div class="tooltip">
+																<i class="tooltip-icon"></i>
+																<div class="tooltip-drop">
+																	<span class="tooltip-drop__text">Tooltip text here</span>
+																</div>
+															</div>
+														</label>
 													</div>
 												</div>
 
-												<div class="basket-map__content">
-													<div class="basket-map-list">
-														<div class="basket-map-list__item">
-															<label class="radio">
-																<input type="radio" name="delivery-point" value="1" checked>
-																<div class="radio__text">
-																	<span class="basket-map-list__text">
-																		<strong>Пункт выдачи посылок BoxBerry<br>
-																		Москва, Ленинградский просп., 44</strong><br>
-																		м. Динамо<br>
-																		Ежедневно, с 10:00 до 21:00
-																	</span>
-																	<span class="basket-map-list__text">
-																		<strong>Бесплатно</strong> — можно забрать 1 июня, в субботу
-																	</span>
-																	<span class="basket-map-list__text">
-																		<span>Срок хранения заказа — 30 дней</span>
-																	</span>
-																</div>
-															</label>
-														</div>
+												<div class="basket-address__item">
+													<div class="field">
+														<label class="field__label">
+															<span class="field__title">Комментарий</span>
+															<textarea class="field__textarea" rows="3"></textarea>
+														</label>
+													</div>
+												</div>
+											</div>
 
-														<div class="basket-map-list__item">
-															<label class="radio">
-																<input type="radio" name="delivery-point" value="2">
-																<div class="radio__text">
-																	<span class="basket-map-list__text">
-																		<strong>Пункт выдачи посылок BoxBerry<br>
-																		Москва, Ленинградский просп., 44</strong><br>
-																		м. Динамо<br>
-																		Ежедневно, с 10:00 до 21:00
-																	</span>
-																	<span class="basket-map-list__text">
-																		<strong>Бесплатно</strong> — можно забрать 1 июня, в субботу
-																	</span>
-																	<span class="basket-map-list__text">
-																		<span>Срок хранения заказа — 30 дней</span>
-																	</span>
-																</div>
-															</label>
-														</div>
+											<span class="basket-address__text">Срок доставки мы уточним при подтверждении заказа, стоимость доставки бесплатна при заказе от 5000 рублей. </span>
+										</div>
+									</div>
 
-														<div class="basket-map-list__item">
-															<label class="radio">
-																<input type="radio" name="delivery-point" value="3">
-																<div class="radio__text">
-																	<span class="basket-map-list__text">
-																		<strong>Пункт выдачи посылок BoxBerry<br>
-																		Москва, Ленинградский просп., 44</strong><br>
-																		м. Динамо<br>
-																		Ежедневно, с 10:00 до 21:00
-																	</span>
-																	<span class="basket-map-list__text">
-																		<strong>Бесплатно</strong> — можно забрать 1 июня, в субботу
-																	</span>
-																	<span class="basket-map-list__text">
-																		<span>Срок хранения заказа — 30 дней</span>
-																	</span>
-																</div>
-															</label>
-														</div>
+									<div data-tab-target="2">
+										<div class="basket-map">
+											<span class="basket-map__description">Выберите на карте пунтк выдачи, из которого будет удобно забрать самостоятельно.<br> Почтоматы работают с 8 до 24 часов. При поступлении в ПВЗ вам придёт смс уведомление.</span>
 
-														<div class="basket-map-list__item">
-															<label class="radio">
-																<input type="radio" name="delivery-point" value="4">
-																<div class="radio__text">
-																	<span class="basket-map-list__text">
-																		<strong>Пункт выдачи посылок BoxBerry<br>
-																		Москва, Ленинградский просп., 44</strong><br>
-																		м. Динамо<br>
-																		Ежедневно, с 10:00 до 21:00
-																	</span>
-																	<span class="basket-map-list__text">
-																		<strong>Бесплатно</strong> — можно забрать 1 июня, в субботу
-																	</span>
-																	<span class="basket-map-list__text">
-																		<span>Срок хранения заказа — 30 дней</span>
-																	</span>
-																</div>
+											<div class="basket-map-grid">
+												<div class="basket-map-grid__col basket-map-grid__col_map">
+													<div class="basket-map__core">
+														<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3f8cb805ee3ae4dcd87f36a1273f6e63482aafc9a92312841fa0dac0377d459d&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+													</div>
+												</div>
+
+												<div class="basket-map-grid__col basket-map-grid__col_list">
+													<span class="basket-map__title">Выбор пункта выдачи</span>
+
+													<div class="basket-map-search">
+														<div class="field">
+															<label class="field__label">
+																<input type="text" class="field__input field__input_search" placeholder="Поиск по метро, улице и названию">
 															</label>
+
+															<div class="field-search">
+																<svg class="field-search__icon">
+																	<use xlink:href="./img/sprite.svg#lens"></use>
+																</svg>
+															</div>
+														</div>
+													</div>
+
+													<div class="basket-map__content">
+														<div class="basket-map-list">
+															<div class="basket-map-list__item">
+																<label class="radio">
+																	<input type="radio" name="delivery-point" value="1" checked>
+																	<div class="radio__text">
+																		<span class="basket-map-list__text">
+																			<strong>Пункт выдачи посылок BoxBerry<br>
+																			Москва, Ленинградский просп., 44</strong><br>
+																			м. Динамо<br>
+																			Ежедневно, с 10:00 до 21:00
+																		</span>
+																		<span class="basket-map-list__text">
+																			<strong>Бесплатно</strong> — можно забрать 1 июня, в субботу
+																		</span>
+																		<span class="basket-map-list__text">
+																			<span>Срок хранения заказа — 30 дней</span>
+																		</span>
+																	</div>
+																</label>
+															</div>
+
+															<div class="basket-map-list__item">
+																<label class="radio">
+																	<input type="radio" name="delivery-point" value="2">
+																	<div class="radio__text">
+																		<span class="basket-map-list__text">
+																			<strong>Пункт выдачи посылок BoxBerry<br>
+																			Москва, Ленинградский просп., 44</strong><br>
+																			м. Динамо<br>
+																			Ежедневно, с 10:00 до 21:00
+																		</span>
+																		<span class="basket-map-list__text">
+																			<strong>Бесплатно</strong> — можно забрать 1 июня, в субботу
+																		</span>
+																		<span class="basket-map-list__text">
+																			<span>Срок хранения заказа — 30 дней</span>
+																		</span>
+																	</div>
+																</label>
+															</div>
+
+															<div class="basket-map-list__item">
+																<label class="radio">
+																	<input type="radio" name="delivery-point" value="3">
+																	<div class="radio__text">
+																		<span class="basket-map-list__text">
+																			<strong>Пункт выдачи посылок BoxBerry<br>
+																			Москва, Ленинградский просп., 44</strong><br>
+																			м. Динамо<br>
+																			Ежедневно, с 10:00 до 21:00
+																		</span>
+																		<span class="basket-map-list__text">
+																			<strong>Бесплатно</strong> — можно забрать 1 июня, в субботу
+																		</span>
+																		<span class="basket-map-list__text">
+																			<span>Срок хранения заказа — 30 дней</span>
+																		</span>
+																	</div>
+																</label>
+															</div>
+
+															<div class="basket-map-list__item">
+																<label class="radio">
+																	<input type="radio" name="delivery-point" value="4">
+																	<div class="radio__text">
+																		<span class="basket-map-list__text">
+																			<strong>Пункт выдачи посылок BoxBerry<br>
+																			Москва, Ленинградский просп., 44</strong><br>
+																			м. Динамо<br>
+																			Ежедневно, с 10:00 до 21:00
+																		</span>
+																		<span class="basket-map-list__text">
+																			<strong>Бесплатно</strong> — можно забрать 1 июня, в субботу
+																		</span>
+																		<span class="basket-map-list__text">
+																			<span>Срок хранения заказа — 30 дней</span>
+																		</span>
+																	</div>
+																</label>
+															</div>
 														</div>
 													</div>
 												</div>
 											</div>
 										</div>
+
+										<div class="basket-map-m">
+											<button class="btn btn_md btn_red">Выбрать пункт выдачи</button>
+										</div>
 									</div>
 
-									<div class="basket-map-m">
-										<button class="btn btn_md btn_red">Выбрать пункт выдачи</button>
-									</div>
 								</div>
 
 								<div class="basket-form__group">

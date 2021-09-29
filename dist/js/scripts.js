@@ -406,4 +406,20 @@ $(function() {
             input.val(val);
         }
     });
+
+    $('[data-tab-open]').on('click', function() {
+        var $t = $(this),
+            id = $t.attr('data-tab-open'),
+            $container = $t.parents('[data-tabs]'),
+            $links = $container.find('[data-tab-open]'),
+            $tabs = $container.find('[data-tab-target]');
+
+        $links.removeClass('is-active');
+        $t.addClass('is-active');
+
+        $tabs
+            .removeClass('is-opened')
+            .filter('[data-tab-target="'+id+'"]')
+            .addClass('is-opened');
+    });
 });

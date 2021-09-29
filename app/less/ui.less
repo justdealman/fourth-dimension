@@ -41,47 +41,69 @@
     cursor: pointer;
 
     &:hover {
-        color: @colorRed;
+        @media @desktop {
+            color: @colorRed;
+        }
+
+        @media @mobile {
+            opacity: .8;
+        }
     }
 
     &:active {
-        color: @colorRed;
-        text-decoration: underline;
+        @media @desktop {
+            color: @colorRed;
+            text-decoration: underline;
+        }
+
+        @media @mobile {
+            opacity: .9;
+        }
     }
 
     &:visited {
-        //color: @colorGrey4;
+        @media @desktop {
+//            color: @colorGrey4;
+        }
+
+        @media @mobile {
+//            opacity: .8;
+        }
     }
 
     &_underlined {
         text-decoration: underline;
 
-        &:hover {
-            text-decoration: underline;
-        }
+        @media @desktop {
+            &:hover {
+                text-decoration: underline;
+            }
 
-        &:active {
-            text-decoration: none;
-        }
+            &:active {
+                text-decoration: none;
+            }
 
-        &:visited {
-            //text-decoration: underline;
+            &:visited {
+                //text-decoration: underline;
+            }
         }
     }
 
     &_light {
         color: @colorWhite;
 
-        &:hover {
-            color: @colorRed;
-        }
+        @media @desktop {
+            &:hover {
+                color: @colorRed;
+            }
 
-        &:active {
-            color: @colorRed;
-        }
+            &:active {
+                color: @colorRed;
+            }
 
-        &:visited {
-            //color: fade(@colorWhite, 50%);
+            &:visited {
+                //color: fade(@colorWhite, 50%);
+            }
         }
     }
 }
@@ -95,8 +117,20 @@
     white-space: nowrap;
 
     &:hover {
-        color: @colorRed;
-        stroke: @colorRed;
+        @media @desktop {
+            color: @colorRed;
+            stroke: @colorRed;
+        }
+
+        @media @mobile {
+            opacity: .8;
+        }
+    }
+
+    &:active {
+        @media @mobile {
+            opacity: .9;
+        }
     }
 
     &__icon {
@@ -124,6 +158,11 @@
     white-space: nowrap;
     cursor: pointer;
 
+    &_sm {
+        min-height: 40px;
+        padding: 10px 15px;
+    }
+
     &_md {
         min-height: 50px;
         padding: 15px 33px;
@@ -146,20 +185,42 @@
         max-width: none;
     }
 
+    @media @mobile {
+        &:hover {
+            opacity: .8;
+        }
+
+        &:active {
+            opacity: .9;
+        }
+
+        &:disabled {
+            opacity: .5;
+        }
+    }
+
     &_primary {
         color: @colorWhite;
         background-color: @colorBlack;
 
         &:hover {
-            background-color: @colorRed;
+            @media @desktop {
+                background-color: @colorRed;
+            }
         }
 
         &:active {
-            background-color: @colorRedDark;
+            @media @desktop {
+                background-color: @colorRedDark;
+            }
         }
 
         &:disabled {
-            background-color: @colorDisabled;
+            cursor: default;
+
+            @media @desktop {
+                background-color: @colorDisabled;
+            }
         }
 
         @media @mobile {
@@ -200,35 +261,39 @@
             padding: 14px 31px;
         }
 
-        &:hover {
-            border-color: @colorGrey4;
-        }
-
-        &:active {
-            border-color: #303030;
-        }
-
-        &:disabled {
-            color: @colorGrey3;
-            border-color: @colorGrey3;
-        }
-
-        &_red-hovered {
+        @media @desktop {
             &:hover {
-                color: @colorWhite;
-                background-color: @colorRed;
-                border-color: @colorRed;
+                border-color: @colorGrey4;
             }
 
             &:active {
-                background-color: #D21E17;
-                border-color: #D21E17;
+                border-color: #303030;
             }
 
             &:disabled {
-                color: @colorWhite;
-                background-color: #B7B7B7;
-                border-color: #B7B7B7;
+                color: @colorGrey3;
+                border-color: @colorGrey3;
+            }
+        }
+
+        &_red-hovered {
+            @media @desktop {
+                &:hover {
+                    color: @colorWhite;
+                    background-color: @colorRed;
+                    border-color: @colorRed;
+                }
+
+                &:active {
+                    background-color: #D21E17;
+                    border-color: #D21E17;
+                }
+
+                &:disabled {
+                    color: @colorWhite;
+                    background-color: #B7B7B7;
+                    border-color: #B7B7B7;
+                }
             }
         }
     }
@@ -236,16 +301,18 @@
     &_light {
         background-color: @colorWhite;
 
-        &:hover {
-            background-color: @colorGreyBg;
-        }
+        @media @desktop {
+            &:hover {
+                background-color: @colorGreyBg;
+            }
 
-        &:active {
-            background-color: #E1E1E1;
-        }
+            &:active {
+                background-color: #E1E1E1;
+            }
 
-        &:disabled {
-            color: @colorGrey3;
+            &:disabled {
+                color: @colorGrey3;
+            }
         }
     }
 
@@ -253,14 +320,16 @@
         color: @colorWhite;
         background-color: @colorRed;
 
-        &:hover {
-            background-color: @colorBlack;
+        @media @desktop {
+            &:hover {
+                background-color: @colorBlack;
+            }
         }
     }
 
     &_favorite {
-        width: 50px;
-        min-width: 50px;
+        width: 52px;
+        min-width: 52px;
         padding-left: 0;
         padding-right: 0;
 
@@ -614,7 +683,18 @@
     position: relative;
 
     &__label {
+        position: relative;
         display: block;
+
+        &_has-tip {
+            padding-right: 29px;
+
+            .tooltip {
+                position: absolute;
+                right: 0;
+                bottom: 5px;
+            }
+        }
     }
 
     &__title {
@@ -624,7 +704,8 @@
         margin-bottom: 4px;
     }
 
-    &__input {
+    &__input,
+    &__textarea {
         width: 100%;
         font-size: 14px;
         padding: 11px 15px;
@@ -637,6 +718,10 @@
         &:focus {
             border-color: @colorGrey4;
         }
+    }
+
+    &__textarea {
+        resize: vertical;
     }
 
     &-search {
@@ -654,5 +739,13 @@
             width: 24px;
             height: 24px;
         }
+    }
+}
+
+[data-tab-target] {
+    display: none;
+
+    &.is-opened {
+        display: block;
     }
 }
