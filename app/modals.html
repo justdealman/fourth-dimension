@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<title>4 измерение</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<link href="./css/styles.css" rel="stylesheet">
+	<body>
+		<div class="wrapper">
+			<header class="header header_inner">
+				<div class="panel">
+					<div class="container panel__container">
+						<div class="panel_row">
+							<div class="panel_contacts">
+								<div class="panel_contacts__item">
+									<div class="panel_location">
+										<span class="panel_location__text">Москва</span>
+										<svg class="panel_location__arrow">
+											<use xlink:href="./img/sprite.svg#arrow-mini"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="panel_contacts__item">
+									<a href="tel:+78004442474" class="panel_contacts__text">8 (800) 444-24-74</a>
+								</div>
+								<div class="panel_contacts__item">
+									<a href="#" class="panel_contacts__text panel_contacts__link">WhatsApp</a>
+								</div>
+								<div class="panel_contacts__item panel_contacts__item_call">
+									<span class="panel_contacts__text panel_contacts__link">Заказать звонок</span>
+								</div>
+							</div>
+							<div class="panel_menu">
+								<a href="#" class="panel_menu__item">Доставка и оплата</a>
+								<a href="#" class="panel_menu__item">Гарантия</a>
+								<a href="#" class="panel_menu__item">Возврат</a>
+								<a href="#" class="panel_menu__item">B2B</a>
+								<a href="#" class="panel_menu__item">Отзывы</a>
+								<a href="#" class="panel_menu__item">Акции</a>
+								<a href="#" class="panel_menu__item">Блог</a>
+							</div>
+							<a href="#" class="panel_account">
+								<svg class="panel_account__icon">
+									<use xlink:href="./img/sprite.svg#person"></use>
+								</svg>
+								<span class="panel_account__text">Личный кабинет</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="header_row">
+						<div class="header_nav">
+							<span><i></i></span>
+						</div>
+
+						<div class="header_logo">
+							<a href="/" class="header_logo__link">
+								<div class="logo">
+									<svg class="logo_icon">
+										<use xlink:href="./img/sprite.svg#logo"></use>
+									</svg>
+									<span class="logo_text">етвертое измерение</span>
+									<span class="logo_subtext">cеть часовых магазинов</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="header_menu">
+							<div class="header_menu_item">
+								<a href="#" class="header_menu_link">Часы</a>
+							</div>
+							<div class="header_menu_item">
+								<a href="#" class="header_menu_link">Аксессуары</a>
+							</div>
+							<div class="header_menu_item">
+								<a href="#" class="header_menu_link">Бренды</a>
+							</div>
+							<div class="header_menu_item">
+								<a href="#" class="header_menu_link">Распродажа</a>
+							</div>
+							<div class="header_menu_item">
+								<a href="#" class="header_menu_link">Подарочные сертификаты</a>
+							</div>
+						</div>
+
+						<form action="#" class="header_search">
+							<input type="text" class="header_search__input" placeholder="Найти">
+							<button type="submit" class="header_search__btn">
+								<svg class="header_search__icon">
+									<use xlink:href="./img/sprite.svg#lens"></use>
+								</svg>
+							</button>
+						</form>
+
+						<div class="header_services">
+							<div class="header_services__item">
+								<a href="#" class="header_services__link">
+									<svg class="header_services__icon header_services__icon_heart">
+										<use xlink:href="./img/sprite.svg#heart"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="header_services__item">
+								<a href="#" class="header_services__link">
+									<svg class="header_services__icon header_services__icon_basket">
+										<use xlink:href="./img/sprite.svg#basket"></use>
+									</svg>
+									<span class="header_services__amount">2</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="inner">
+				<section class="text">
+					<div class="container">
+						<div class="text__row">
+							<h1 class="title title_inner title_standart text__title">Модальные окна</h1>
+
+							<div style="margin-bottom: 20px">
+								<button class="btn btn_md2 btn_primary" data-open="login">Вход</button>
+							</div>
+
+							<div style="margin-bottom: 20px">
+								<button class="btn btn_md2 btn_primary" data-open="availability">Уведомить о наличии</button>
+							</div>
+
+							<div style="margin-bottom: 20px">
+								<button class="btn btn_md2 btn_primary" data-open="one-click">Купить в 1 клик</button>
+							</div>
+
+							<div style="margin-bottom: 20px">
+								<button class="btn btn_md2 btn_primary" data-open="order-belt">Заказать ремень</button>
+							</div>
+
+							<div style="margin-bottom: 20px">
+								<button class="btn btn_md2 btn_primary" data-open="ask-question">Задать вопрос по модели</button>
+							</div>
+
+							<div style="margin-bottom: 20px">
+								<button class="btn btn_md2 btn_primary" data-open="request-call">Заказать звонок</button>
+							</div>
+
+							<div style="margin-bottom: 20px">
+								<button class="btn btn_md2 btn_primary" data-open="added-to-basket">Товар добавлен в корзину</button>
+							</div>
+
+							<div style="margin-bottom: 20px">
+								<button class="btn btn_md2 btn_primary" data-open="leave-feedback">Оставить отзыв</button>
+							</div>
+
+							<div style="margin-bottom: 20px">
+								<button class="btn btn_md2 btn_primary" data-open="buy">Купить в рассрочку</button>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div class="fade-bg"></div>
+
+			<div class="modal" data-target="login" data-tabs>
+				<div class="modal-close" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+				</div>
+
+				<span class="modal-login__title">Вход</span>
+
+				<div class="modal-login-nav">
+					<span class="modal-login-nav__item is-active" data-tab-open="1">Телефон</span>
+					<span class="modal-login-nav__item" data-tab-open="2">E-mail</span>
+				</div>
+
+				<div data-tab-target="1" class="is-opened">
+					<div class="modal-login__field">
+						<div class="field">
+							<label class="field__label">
+								<span class="field__title">Ваш номер телефона</span>
+								<input type="text" class="field__input" value="">
+							</label>
+						</div>
+					</div>
+
+					<button class="btn btn_primary btn_sm modal-login__btn">Вход</button>
+
+					<!--
+					<div class="modal-login__field">
+						<div class="field">
+							<label class="field__label">
+								<span class="field__title">Код из СМС</span>
+								<input type="text" class="field__input" value="">
+							</label>
+						</div>
+					</div>
+
+					<div class="modal-login-info">
+						<span class="modal-login-info__item">Код отправлен на номер +7 989-500-77-77</span>
+						<span class="modal-login-info__item">Получить повторный код можно через <strong>0:55</strong> секунд</span>
+					</div>
+					-->
+				</div>
+
+				<div data-tab-target="2">
+					<div class="modal-login__field">
+						<div class="field">
+							<label class="field__label">
+								<span class="field__title">E-mail</span>
+								<input type="text" class="field__input" value="">
+							</label>
+						</div>
+					</div>
+
+					<div class="modal-login__field">
+						<div class="field">
+							<label class="field__label">
+								<span class="field__title">Пароль</span>
+								<input type="password" class="field__input" value="">
+							</label>
+						</div>
+					</div>
+
+					<div class="modal-login-forgot">
+						<div class="modal-login-forgot__col">
+							<label class="checkbox">
+								<input type="checkbox" class="checkbox__input" name="">
+								<div class="checkbox-icon">
+									<svg class="checkbox-icon__svg">
+										<use xlink:href="./img/sprite.svg#check"></use>
+									</svg>
+								</div>
+
+								<span class="checkbox__text">Запомнить меня</span>
+							</label>
+						</div>
+						
+						<div class="modal-login-forgot__col">
+							<a href="#" class="modal-login-forgot__text link link_underlined">Забыли пароль?</a>
+						</div>
+					</div>
+
+					<button class="btn btn_primary btn_sm modal-login__btn">Вход</button>
+				</div>
+
+				<div class="modal-login-social">
+					<span class="modal-login-social__title">Войти как пользователь</span>
+
+					<div class="modal-login-social__list">
+						<a href="#" class="modal-login-social__item">
+							<svg class="modal-login-social__icon">
+								<use xlink:href="./img/sprite.svg#vkontakte"></use>
+							</svg>
+						</a>
+
+						<a href="#" class="modal-login-social__item">
+							<svg class="modal-login-social__icon">
+								<use xlink:href="./img/sprite.svg#instagram"></use>
+							</svg>
+						</a>
+
+						<a href="#" class="modal-login-social__item">
+							<svg class="modal-login-social__icon">
+								<use xlink:href="./img/sprite.svg#facebook"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal" data-target="availability">
+				<div class="modal-close" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+				</div>
+
+				<span class="modal__title">Уведомить о наличии</span>
+
+				<span class="modal__text"><strong>Швейцарские наручные часы TAG Heuer Carrera CBN2A1B.BA0643</strong></span>
+				<span class="modal__text">Укажите e-mail адрес мы сообщим, когда товар появится в наличии.</span>
+
+				<div class="modal__field">
+					<div class="field">
+						<label class="field__label">
+							<span class="field__title">E-mail</span>
+							<input type="text" class="field__input" value="">
+						</label>
+					</div>
+				</div>
+
+				<button class="btn btn_md btn_red modal__btn">Уведомить о наличии</button>
+
+				<span class="modal__agreement">Нажимая на кнопку «Уведомить о наличии» вы соглашаетесь с условиями <a href="#" class="link link_underlined">политики конфиденциальности</a>.</span>
+			</div>
+
+			<div class="modal" data-target="one-click">
+				<div class="modal-close" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+				</div>
+
+				<span class="modal__title">Купить в 1 клик</span>
+
+				<span class="modal__text"><strong>Швейцарские наручные часы TAG Heuer Carrera CBN2A1B.BA0643 за 172 720 ₽</strong></span>
+
+				<div class="modal__field">
+					<div class="field">
+						<label class="field__label">
+							<span class="field__title">ФИО</span>
+							<input type="text" class="field__input" value="">
+						</label>
+					</div>
+				</div>
+
+				<div class="modal__field">
+					<div class="field">
+						<label class="field__label">
+							<span class="field__title">Телефон</span>
+							<input type="text" class="field__input" value="">
+						</label>
+					</div>
+				</div>
+
+				<button class="btn btn_md btn_red modal__btn">Купить</button>
+
+				<span class="modal__agreement">Нажимая на кнопку «Уведомить о наличии» вы соглашаетесь с условиями <a href="#" class="link link_underlined">политики конфиденциальности</a>.</span>
+			</div>
+
+			<div class="modal" data-target="order-belt">
+				<div class="modal-close modal-close_light" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+				</div>
+
+				<div class="modal-head">
+					<span class="modal-head__title">Заказать<br> ремень</span>
+
+					<span class="modal-head__text">Швейцарские наручные часы TAG Heuer Carrera CBN2A1B.BA0643</span>
+
+					<div class="modal-head__bg">
+						<img src="./pic/order-belt.jpg" class="img-cover" alt="">
+					</div>
+				</div>
+
+				<div class="modal-type">
+					<div class="modal-type__col">
+						<label class="checkbox">
+							<input type="checkbox" class="checkbox__input" name="">
+							<div class="checkbox-icon">
+								<svg class="checkbox-icon__svg">
+									<use xlink:href="./img/sprite.svg#check"></use>
+								</svg>
+							</div>
+
+							<span class="checkbox__text">Браслет</span>
+						</label>
+					</div>
+
+					<div class="modal-type__col">
+						<label class="checkbox">
+							<input type="checkbox" class="checkbox__input" name="">
+							<div class="checkbox-icon">
+								<svg class="checkbox-icon__svg">
+									<use xlink:href="./img/sprite.svg#check"></use>
+								</svg>
+							</div>
+
+							<span class="checkbox__text">Ремень</span>
+						</label>
+					</div>
+
+					<div class="modal-type__col">
+						<label class="checkbox">
+							<input type="checkbox" class="checkbox__input" name="">
+							<div class="checkbox-icon">
+								<svg class="checkbox-icon__svg">
+									<use xlink:href="./img/sprite.svg#check"></use>
+								</svg>
+							</div>
+
+							<span class="checkbox__text">Клипса</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="modal__field">
+					<div class="field">
+						<label class="field__label">
+							<span class="field__title">ФИО</span>
+							<input type="text" class="field__input" value="">
+						</label>
+					</div>
+				</div>
+
+				<div class="modal__field">
+					<div class="field">
+						<label class="field__label">
+							<span class="field__title">Телефон*</span>
+							<input type="text" class="field__input" value="">
+						</label>
+					</div>
+				</div>
+
+				<div class="modal__field">
+					<div class="field">
+						<label class="field__label">
+							<span class="field__title">Город</span>
+							<input type="text" class="field__input" value="">
+						</label>
+					</div>
+				</div>
+
+				<button class="btn btn_md btn_red modal__btn">Заказать</button>
+
+				<span class="modal__agreement">Нажимая на кнопку «Уведомить о наличии» вы соглашаетесь с условиями <a href="#" class="link link_underlined">политики конфиденциальности</a>.</span>
+			</div>
+
+			<div class="modal" data-target="ask-question">
+				<div class="modal-close" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+				</div>
+
+				<span class="modal__title">Задать вопрос по модели</span>
+
+				<span class="modal__text"><strong>Швейцарские наручные часы TAG Heuer Carrera CBN2A1B.BA0643 за 172 720 ₽</strong></span>
+
+				<div class="modal__field">
+					<div class="field">
+						<label class="field__label">
+							<span class="field__title">ФИО</span>
+							<input type="text" class="field__input" value="">
+						</label>
+					</div>
+				</div>
+
+				<div class="modal__field">
+					<div class="field">
+						<label class="field__label">
+							<span class="field__title">E-mail</span>
+							<input type="text" class="field__input" value="">
+						</label>
+					</div>
+				</div>
+
+				<div class="modal__field">
+					<div class="field">
+						<label class="field__label">
+							<span class="field__title">Текст вопроса</span>
+							<textarea class="field__textarea" rows="5"></textarea>
+						</label>
+					</div>
+				</div>
+
+				<button class="btn btn_md2 btn_red modal__btn">Задать вопрос</button>
+
+				<span class="modal__agreement">Нажимая на кнопку «Уведомить о наличии» вы соглашаетесь с условиями <a href="#" class="link link_underlined">политики конфиденциальности</a>.</span>
+			</div>
+
+			<div class="modal" data-target="request-call">
+				<div class="modal-close" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+				</div>
+
+				<span class="modal__title">Заказать звонок</span>
+
+				<div class="modal__field">
+					<div class="field">
+						<label class="field__label">
+							<span class="field__title">Имя</span>
+							<input type="text" class="field__input" value="">
+						</label>
+					</div>
+				</div>
+
+				<div class="modal__field">
+					<div class="field">
+						<label class="field__label">
+							<span class="field__title">Телефон</span>
+							<input type="text" class="field__input" value="">
+						</label>
+					</div>
+				</div>
+
+				<div class="modal__field">
+					<div class="field">
+						<label class="field__label">
+							<span class="field__title">Выберите удобный интервал времени для звонка</span>
+							<select class="field__select">
+								<option value="">10:00 - 11:00 мск</option>
+								<option value="">11:00 - 12:00 мск</option>
+							</select>
+						</label>
+					</div>
+				</div>
+
+				<button class="btn btn_md btn_red modal__btn">Купить</button>
+
+				<span class="modal__agreement">Нажимая на кнопку «Уведомить о наличии» вы соглашаетесь с условиями <a href="#" class="link link_underlined">политики конфиденциальности</a>.</span>
+			</div>
+
+			<div class="modal" data-target="added-to-basket">
+				<div class="modal-close" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+				</div>
+
+				<span class="modal__title">Товар добавлен<br> в корзину</span>
+
+				<table class="modal-table">
+					<tbody>
+						<tr>
+							<td class="modal-table_photo">
+								<div class="modal-table__photo">
+									<img src="./pic/storage-1.jpg" class="img-cover" alt="">
+								</div>
+							</td>
+
+							<td class="modal-table">
+								<strong>Часы Tag Heuer WAY1355BH0716 Aquarecer</strong>
+							</td>
+							<td class="modal-table_price">999 999 ₽</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="modal-action">
+					<div class="modal-action__col modal-action__col_buy">
+						<button class="btn btn_md2 btn_red modal-action__buy">В корзину</button>
+					</div>
+
+					<div class="modal-action__col modal-action__col_continue">
+						<button class="btn btn_md btn_secondary modal-action__continue">Продолжить покупки</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal" data-target="leave-feedback">
+				<div class="modal-close" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+				</div>
+
+				<span class="modal__title">Оставить отзыв</span>
+
+				<span class="modal__text"><strong>Швейцарские наручные часы TAG Heuer Carrera CBN2A1B.BA0643</strong></span>
+
+				<div class="modal-reviews">
+					<div class="modal-reviews__col modal-reviews__col_2">
+						<div class="field">
+							<label class="field__label">
+								<span class="field__title">Имя</span>
+								<input type="text" class="field__input" value="">
+							</label>
+						</div>
+					</div>
+
+					<div class="modal-reviews__col modal-reviews__col_1">
+						<div class="field">
+							<label class="field__label">
+								<span class="field__title">Город</span>
+								<input type="text" class="field__input" value="">
+							</label>
+						</div>
+					</div>
+
+					<div class="modal-reviews__col modal-reviews__col_2">
+						<div class="field">
+							<label class="field__label">
+								<span class="field__title">Отзыв</span>
+								<textarea class="field__textarea" rows="5"></textarea>
+							</label>
+						</div>
+					</div>
+
+					<div class="modal-reviews__col modal-reviews__col_1">
+						<div class="field">
+							<div class="field__label">
+								<span class="field__title">Ваша оценка:</span>
+
+								<div class="rating">
+									<svg class="rating__item is-empty">
+										<use xlink:href="./img/sprite.svg#star"></use>
+									</svg>
+									<svg class="rating__item is-empty">
+										<use xlink:href="./img/sprite.svg#star"></use>
+									</svg>
+									<svg class="rating__item is-empty">
+										<use xlink:href="./img/sprite.svg#star"></use>
+									</svg>
+									<svg class="rating__item is-empty">
+										<use xlink:href="./img/sprite.svg#star"></use>
+									</svg>
+									<svg class="rating__item is-empty">
+										<use xlink:href="./img/sprite.svg#star"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal__upload">
+					<div class="field">
+						<label class="btn btn_sm btn_secondary field__upload" for="upload-photo">Загрузить Фото</label>
+
+						<input type="file" class="field__file" id="upload-photo">
+					</div>
+				</div>
+
+				<div class="modal__captcha">
+					<img src="./pic/captcha.png" alt="">
+				</div>
+
+				<button class="btn btn_md btn_red modal__btn">Отправить отзыв</button>
+			</div>
+
+			<div class="modal modal_buy" data-target="buy" data-tabs>
+				<div class="modal-close" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+				</div>
+
+				<span class="modal__title">Купить в рассрочку <span>без переплаты</span></span>
+
+				<span class="modal__text"><strong>Швейцарские наручные часы TAG Heuer Carrera CBN2A1B.BA0643 за 75 380 Р</strong></span>
+
+				<div class="modal-login-nav">
+					<span class="modal-login-nav__item is-active" data-tab-open="1">ТИНЬКОФФ</span>
+					<span class="modal-login-nav__item" data-tab-open="2">СБЕРБАНК</span>
+				</div>
+
+				<div data-tab-target="1" class="modal-buy is-opened">
+					<div class="modal-buy__row">
+						<div class="modal-buy__col">
+							<span class="plans-list__title">Срок, мес</span>
+							<div class="plans-options">
+								<span class="plans-options__item">6 <span>мес</span></span>
+								<span class="plans-options__item">9 <span>мес</span></span>
+								<span class="plans-options__item">10 <span>мес</span></span>
+								<span class="plans-options__item">12 <span>мес</span></span>
+								<span class="plans-options__item">18 <span>мес</span></span>
+							</div>
+						</div>
+
+						<div class="modal-buy__col">
+							<span class="plans-list__title">Платёж</span>
+							<strong class="plans-list__text">22 456 Р/мес.</strong>
+						</div>
+
+						<div class="modal-buy__col">
+							<span class="plans-list__title">Первый взнос</span>
+							<span class="plans-list__text">0 Р/мес.</span>
+						</div>
+					</div>
+					
+					<div class="modal-buy__more">
+						<a href="#" class="link link_underlined">Подробнее о рассрочке</a>
+					</div>
+				</div>
+
+				<div data-tab-target="2" class="modal-buy">
+					<div class="modal-buy__row">
+						<div class="modal-buy__col">
+							<span class="plans-list__title">Срок, мес</span>
+							<div class="plans-options">
+								<span class="plans-options__item">6 <span>мес</span></span>
+								<span class="plans-options__item">9 <span>мес</span></span>
+								<span class="plans-options__item">10 <span>мес</span></span>
+								<span class="plans-options__item">12 <span>мес</span></span>
+								<span class="plans-options__item">18 <span>мес</span></span>
+							</div>
+						</div>
+
+						<div class="modal-buy__col">
+							<span class="plans-list__title">Платёж</span>
+							<strong class="plans-list__text">от 42 456 Р/мес.</strong>
+						</div>
+
+						<div class="modal-buy__col">
+							<span class="plans-list__title">Первый взнос</span>
+							<span class="plans-list__text">0 Р/мес.</span>
+						</div>
+					</div>
+
+					<div class="modal-buy__more">
+						<a href="#" class="link link_underlined">Подробнее о рассрочке</a>
+					</div>
+				</div>
+
+				<div class="modal-reviews">
+					<div class="modal-reviews__col modal-reviews__col_half">
+						<div class="field">
+							<label class="field__label">
+								<span class="field__title">Имя</span>
+								<input type="text" class="field__input" value="">
+							</label>
+						</div>
+					</div>
+
+					<div class="modal-reviews__col modal-reviews__col_half">
+						<div class="field">
+							<label class="field__label">
+								<span class="field__title">Телефон</span>
+								<input type="text" class="field__input" value="">
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<button class="btn btn_md btn_red modal__btn">оформить рассрочку</button>
+
+				<span class="modal__agreement">Нажимая на кнопку «Уведомить о наличии» вы соглашаетесь с условиями <a href="#" class="link link_underlined">политики конфиденциальности</a>.</span>
+			</div>
+
+
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__row">
+						<div class="footer__grid">
+							<div class="footer__col footer__contacts">
+								<span class="footer__title">Свяжитесь с нами</span>
+								<div class="footer-contacts">
+									<div class="footer-contacts__item">
+										<a href="tel:84998774906" class="footer-contacts__link"><strong>8 (499) 877-49-06</strong></a>
+									</div>
+									<span class="footer-contacts__item">Часы работы<br> Пн–Вс 10:00–22:00</span>
+									<div class="footer-contacts__item">
+										<a href="mailto:zakaz@4-izmerenie.ru" class="footer-contacts__link">zakaz@4-izmerenie.ru</a>
+									</div>
+								</div>
+								<button class="btn btn_md btn_light footer__btn">Перезвоните мне</button>
+							</div>
+							<div class="footer__col footer__nav">
+								<span class="footer__title is-nav">О компании</span>
+								<div class="footer-nav">
+									<div class="footer-nav__item">
+										<a href="#" class="link link_light">О нас</a>
+									</div>
+									<div class="footer-nav__item">
+										<a href="#" class="link link_light">Контакты</a>
+									</div>
+									<div class="footer-nav__item">
+										<a href="#" class="link link_light">B2B</a>
+									</div>
+									<div class="footer-nav__item">
+										<a href="#" class="link link_light">Магазины</a>
+									</div>
+								</div>
+							</div>
+							<div class="footer__col footer__nav">
+								<span class="footer__title is-nav">Покупателям</span>
+								<div class="footer-nav">
+									<div class="footer-nav__item">
+										<a href="#" class="link link_light">Акции и распродажи</a>
+									</div>
+									<div class="footer-nav__item">
+										<a href="#" class="link link_light">Блог</a>
+									</div>
+									<div class="footer-nav__item">
+										<a href="#" class="link link_light">Доставка и оплата</a>
+									</div>
+									<div class="footer-nav__item">
+										<a href="#" class="link link_light">Гарантия</a>
+									</div>
+									<div class="footer-nav__item">
+										<a href="#" class="link link_light">Возврат</a>
+									</div>
+								</div>
+							</div>
+							<div class="footer__col footer__nav footer__nav_social">
+								<span class="footer__title">Мы в соц. сетях</span>
+								<div class="footer-social">
+									<div class="footer-social__col">
+										<a href="#" class="footer-social__item">
+											<svg class="footer-social__icon">
+												<use xlink:href="./img/sprite.svg#vkontakte"></use>
+											</svg>
+										</a>
+									</div>
+									<div class="footer-social__col">
+										<a href="#" class="footer-social__item">
+											<svg class="footer-social__icon">
+												<use xlink:href="./img/sprite.svg#facebook"></use>
+											</svg>
+										</a>
+									</div>
+									<div class="footer-social__col">
+										<a href="#" class="footer-social__item">
+											<svg class="footer-social__icon">
+												<use xlink:href="./img/sprite.svg#instagram"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="footer-yandex_tablet">
+									<img src="./pic/ymarket.png" alt="">
+								</div>
+							</div>
+							<div class="footer__col footer__nav footer__nav_sub">
+								<img src="./pic/ymarket.png" alt="">
+							</div>
+						</div>
+						<div class="footer__grid footer__grid_bottom">
+							<div class="footer__col footer__copy">
+								<span class="footer__text">© 1999-2020 «Четвёртое Измерение».<br> Предложения на данном сайте не являются публичной офертой.</span>
+							</div>
+							<div class="footer__col footer__author">
+								<span class="footer__text">Дизайн сайта — <a href="#" class="link link_light"><strong>RUFORMAT®</strong></a></span>
+							</div>
+							<div class="footer__col footer__privacy">
+								<span class="footer__text"><a href="#" class="link link_light">Политика конфиденциальности</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-connect">
+					<div class="footer-connect__row">
+						<a href="#" class="footer-connect__item">
+							<svg class="footer-connect__icon">
+								<use xlink:href="./img/sprite.svg#chat"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="footer-connect__row">
+						<a href="#" class="footer-connect__item">
+							<svg class="footer-connect__icon">
+								<use xlink:href="./img/sprite.svg#whatsapp"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer-go-top">
+					<svg class="footer-go-top__icon">
+						<use xlink:href="./img/sprite.svg#go-top"></use>
+					</svg>
+				</div>
+			</footer>
+		</div>
+
+		<script src="./js/libs.js"></script>
+		<script src="./js/scripts.js"></script>
+	</body>
+</html>

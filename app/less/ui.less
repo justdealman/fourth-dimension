@@ -6,6 +6,10 @@
     text-align: center;
     text-transform: uppercase;
 
+    &_standart {
+        text-transform: none;
+    }
+
     @media @notebook {
         font-size: 24px;
         line-height: 32px;
@@ -26,6 +30,7 @@
         @media @mobile {
             font-size: 24px;
             line-height: 32px;
+            text-align: left;
         }
     }
 
@@ -179,6 +184,13 @@
         line-height: 24px;
         font-weight: bold;
         padding: 27px 30px 28px;
+
+        @media @mobile {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 600;
+            padding: 16px 20px;
+        }
     }
 
     &_wide {
@@ -568,6 +580,10 @@
         &.is-filled {
             fill: @colorRed;
         }
+
+        &.is-empty {
+            fill: @colorGrey2;
+        }
     }
 }
 
@@ -649,6 +665,10 @@
                     background-color: #E32119;
                     border-radius: 50%;
                 }
+
+                &.is-normal {
+                    font-weight: 400;
+                }
             }
         }
     }
@@ -679,6 +699,55 @@
     }
 }
 
+.checkbox {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    cursor: pointer;
+    padding-left: 21px;
+
+    &__input {
+        display: none;
+
+        &:checked {
+            + .checkbox-icon {
+                background-color: @colorRed;
+                border-color: @colorRed;
+
+                svg {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &-icon {
+        position: absolute;
+        left: 0;
+        top: 2px;
+        width: 16px;
+        height: 16px;
+        border: 1px solid @colorGrey3;
+
+        &__svg {
+            display: none;
+            position: absolute;
+            left: 1px;
+            top: 2px;
+            width: 12px;
+            height: 10px;
+            stroke: @colorWhite;
+        }
+    }
+
+    &__text {
+        position: relative;
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
 .field {
     position: relative;
 
@@ -697,6 +766,16 @@
         }
     }
 
+    &__currency {
+        position: absolute;
+        right: 16px;
+        bottom: 10px;
+        display: block;
+        font-size: 14px;
+        line-height: 20px;
+        pointer-events: none;
+    }
+
     &__title {
         display: block;
         font-size: 14px;
@@ -705,6 +784,7 @@
     }
 
     &__input,
+    &__select,
     &__textarea {
         width: 100%;
         font-size: 14px;
@@ -715,12 +795,29 @@
             padding-right: 56px;
         }
 
+        &_currency {
+            padding-right: 42px;
+        }
+
+        &_btn {
+            padding-right: 50px;
+        }
+
         &:focus {
             border-color: @colorGrey4;
         }
     }
 
+    &__select {
+        padding: 10px 11px;
+
+        option:disabled {
+            display: none;
+        }
+    }
+
     &__textarea {
+        min-height: 56px;
         resize: vertical;
     }
 
@@ -740,6 +837,51 @@
             height: 24px;
         }
     }
+
+    &-btn {
+        position: absolute;
+        right: 0;
+        top: 24px;
+        width: 50px;
+        height: 40px;
+        stroke: @colorBlack;
+        text-align: center;
+        cursor: pointer;
+        padding: 8px 0;
+
+        &__icon {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+        }
+
+        &_as-icon {
+            pointer-events: none;
+            cursor: default;
+        }
+    }
+
+    &_tip {
+        display: block;
+        font-size: 14px;
+        line-heigth: 20px;
+        margin-top: 5px;
+    }
+}
+
+.field {
+    &__upload {
+        max-width: none;
+        width: auto;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    &__file {
+        display: none;
+    }
 }
 
 [data-tab-target] {
@@ -747,5 +889,48 @@
 
     &.is-opened {
         display: block;
+    }
+}
+
+.share {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+    margin: 60px -10px 0;
+
+    @media @tablet {
+        margin-top: 40px;
+    }
+
+    &__col {
+        padding: 0 10px;
+    }
+
+    &__action {
+        white-space: nowrap;
+
+        @media @desktop {
+            &:hover {
+                color: @colorRed;
+
+                svg {
+                    stroke: @colorRed;
+                }
+            }
+        }
+    }
+
+    &__icon {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        stroke: @colorBlack;
+        margin: -2px 5px -2px 0;
+    }
+
+    &__text {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 20px;
     }
 }

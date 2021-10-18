@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ru">
+<title>4 измерение</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+<link href="./css/styles.css" rel="stylesheet">
+<body>
+<div class="wrapper">
+	<header class="header header_inner">
+		<div class="panel">
+			<div class="container panel__container">
+				<div class="panel_row">
+					<div class="panel_contacts">
+						<div class="panel_contacts__item">
+							<div class="panel_location">
+								<span class="panel_location__text">Москва</span>
+								<svg class="panel_location__arrow">
+									<use xlink:href="./img/sprite.svg#arrow-mini"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="panel_contacts__item">
+							<a href="tel:+78004442474" class="panel_contacts__text">8 (800) 444-24-74</a>
+						</div>
+						<div class="panel_contacts__item">
+							<a href="#" class="panel_contacts__text panel_contacts__link">WhatsApp</a>
+						</div>
+						<div class="panel_contacts__item panel_contacts__item_call">
+							<span class="panel_contacts__text panel_contacts__link">Заказать звонок</span>
+						</div>
+					</div>
+					<div class="panel_menu">
+						<a href="#" class="panel_menu__item">Доставка и оплата</a>
+						<a href="#" class="panel_menu__item">Гарантия</a>
+						<a href="#" class="panel_menu__item">Возврат</a>
+						<a href="#" class="panel_menu__item">B2B</a>
+						<a href="#" class="panel_menu__item">Отзывы</a>
+						<a href="#" class="panel_menu__item">Акции</a>
+						<a href="#" class="panel_menu__item">Блог</a>
+					</div>
+					<a href="#" class="panel_account">
+						<svg class="panel_account__icon">
+							<use xlink:href="./img/sprite.svg#person"></use>
+						</svg>
+						<span class="panel_account__text">Личный кабинет</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="header_row">
+				<div class="header_nav">
+					<span><i></i></span>
+				</div>
+				<div class="header_logo">
+					<a href="/" class="header_logo__link">
+						<div class="logo">
+							<svg class="logo_icon">
+								<use xlink:href="./img/sprite.svg#logo"></use>
+							</svg>
+							<span class="logo_text">етвертое измерение</span>
+							<span class="logo_subtext">cеть часовых магазинов</span>
+						</div>
+					</a>
+				</div>
+				<div class="header_menu">
+					<div class="header_menu_item">
+						<a href="#" class="header_menu_link">Часы</a>
+					</div>
+					<div class="header_menu_item">
+						<a href="#" class="header_menu_link">Аксессуары</a>
+					</div>
+					<div class="header_menu_item">
+						<a href="#" class="header_menu_link">Бренды</a>
+					</div>
+					<div class="header_menu_item">
+						<a href="#" class="header_menu_link">Распродажа</a>
+					</div>
+					<div class="header_menu_item">
+						<a href="#" class="header_menu_link">Подарочные сертификаты</a>
+					</div>
+				</div>
+				<form action="#" class="header_search">
+					<input type="text" class="header_search__input" placeholder="Найти">
+					<button type="submit" class="header_search__btn">
+						<svg class="header_search__icon">
+							<use xlink:href="./img/sprite.svg#lens"></use>
+						</svg>
+					</button>
+				</form>
+				<div class="header_services">
+					<div class="header_services__item">
+						<a href="#" class="header_services__link">
+							<svg class="header_services__icon header_services__icon_heart">
+								<use xlink:href="./img/sprite.svg#heart"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="header_services__item">
+						<a href="#" class="header_services__link">
+							<svg class="header_services__icon header_services__icon_basket">
+								<use xlink:href="./img/sprite.svg#basket"></use>
+							</svg>
+							<span class="header_services__amount">2</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="inner">
+		<section class="catalog">
+			<div class="container">
+				<div class="catalog-head">
+					<h1 class="title title_inner">ИЗБРАННОЕ</h1>
+				</div>
+				<div class="catalog-action">
+					<div class="catalog-filter catalog-filter_no-border">
+						<div class="catalog-filter__row">
+							<div class="catalog-filter__col">
+								<div class="catalog-list-m">
+									<span class="catalog-list-m__text is-selected">Фильтры</span>
+								</div>
+								<div class="catalog-list">
+									<div class="catalog-list__col">
+										<a href="#" class="catalog-list__item is-selected">
+											<span class="catalog-list__text">Цена</span>
+										</a>
+									</div>
+									<div class="catalog-list__col">
+										<a href="#" class="catalog-list__item">
+											<span class="catalog-list__text">Пол</span>
+										</a>
+									</div>
+									<div class="catalog-list__col">
+										<a href="#" class="catalog-list__item">
+											<span class="catalog-list__text">Бренд</span>
+										</a>
+									</div>
+									<div class="catalog-list__col">
+										<a href="#" class="catalog-list__item">
+											<span class="catalog-list__text">Механизм</span>
+										</a>
+									</div>
+									<div class="catalog-list__col">
+										<a href="#" class="catalog-list__item">
+											<span class="catalog-list__text">Другие фильтры</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="catalog-filter__col">
+								<select class="catalog-sort">
+									<option selected>По популярности</option>
+									<option>По цене</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog-grid">
+					<div class="catalog-grid__col">
+						<div class="item">
+							<div class="item-main">
+								<div class="item-favorite js-toggle-favorite">
+									<svg class="item-favorite__icon">
+										<use xlink:href="./img/sprite.svg#heart"></use>
+									</svg>
+								</div>
+								<div class="item__photo">
+									<img src="./pic/item-1.jpg" class="img-contain" alt="">
+								</div>
+								<span class="item__title">Часы Victorinox<br> 241552.1 Officer`s</span>
+								<div class="item-prices">
+									<div class="item-prices__row">
+										<span class="item-prices__col">47 830 Р</span>
+									</div>
+								</div>
+							</div>
+							<div class="item-more">
+								<div class="item-more__content">
+									<div class="item__text"> В рассрочку — <strong>от 9 568 Р/мес.</strong>
+									</div>
+									<button class="btn btn_md btn_primary item__btn is-mobile">Купить</button>
+									<div class="item__text">
+										<a href="#" class="link link_underlined">Добавить к сравнению</a>
+									</div>
+									<span class="item__text">Мужские, механические с автоподзаводом, стекло минеральное с сапфировым покрытием.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-grid__col">
+						<div class="item">
+							<div class="item-main">
+								<div class="item-favorite js-toggle-favorite">
+									<svg class="item-favorite__icon">
+										<use xlink:href="./img/sprite.svg#heart"></use>
+									</svg>
+								</div>
+								<div class="item__photo">
+									<img src="./pic/item-2.jpg" class="img-contain" alt="">
+								</div>
+								<span class="item__title">Часы Victorinox<br> 241552.1 Officer`s</span>
+								<div class="item-prices">
+									<div class="item-prices__row">
+										<span class="item-prices__col">47 830 Р</span>
+									</div>
+								</div>
+							</div>
+							<div class="item-more">
+								<div class="item-more__content">
+									<div class="item__text"> В рассрочку — <strong>от 9 568 Р/мес.</strong>
+									</div>
+									<button class="btn btn_md btn_primary item__btn is-mobile">Купить</button>
+									<div class="item__text">
+										<a href="#" class="link link_underlined">Добавить к сравнению</a>
+									</div>
+									<span class="item__text">Мужские, механические с автоподзаводом, стекло минеральное с сапфировым покрытием.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-grid__col">
+						<div class="item">
+							<div class="item-main">
+								<div class="item-favorite js-toggle-favorite">
+									<svg class="item-favorite__icon">
+										<use xlink:href="./img/sprite.svg#heart"></use>
+									</svg>
+								</div>
+								<div class="item__photo">
+									<img src="./pic/item-3.jpg" class="img-contain" alt="">
+								</div>
+								<span class="item__title">Часы Victorinox<br> 241552.1 Officer`s</span>
+								<div class="item-prices">
+									<div class="item-prices__row">
+										<span class="item-prices__col">47 830 Р</span>
+									</div>
+								</div>
+							</div>
+							<div class="item-more">
+								<div class="item-more__content">
+									<div class="item__text"> В рассрочку — <strong>от 9 568 Р/мес.</strong>
+									</div>
+									<button class="btn btn_md btn_primary item__btn is-mobile">Купить</button>
+									<div class="item__text">
+										<a href="#" class="link link_underlined">Добавить к сравнению</a>
+									</div>
+									<span class="item__text">Мужские, механические с автоподзаводом, стекло минеральное с сапфировым покрытием.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-grid__col">
+						<div class="item">
+							<div class="item-main">
+								<div class="item-favorite js-toggle-favorite">
+									<svg class="item-favorite__icon">
+										<use xlink:href="./img/sprite.svg#heart"></use>
+									</svg>
+								</div>
+								<div class="item__photo">
+									<img src="./pic/item-4.jpg" class="img-contain" alt="">
+								</div>
+								<span class="item__title">Часы Victorinox<br> 241552.1 Officer`s</span>
+								<div class="item-prices">
+									<div class="item-prices__row">
+										<span class="item-prices__col">47 830 Р</span>
+									</div>
+								</div>
+							</div>
+							<div class="item-more">
+								<div class="item-more__content">
+									<div class="item__text"> В рассрочку — <strong>от 9 568 Р/мес.</strong>
+									</div>
+									<button class="btn btn_md btn_primary item__btn is-mobile">Купить</button>
+									<div class="item__text">
+										<a href="#" class="link link_underlined">Добавить к сравнению</a>
+									</div>
+									<span class="item__text">Мужские, механические с автоподзаводом, стекло минеральное с сапфировым покрытием.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-grid__col">
+						<div class="item">
+							<div class="item-main">
+								<div class="item-favorite js-toggle-favorite">
+									<svg class="item-favorite__icon">
+										<use xlink:href="./img/sprite.svg#heart"></use>
+									</svg>
+								</div>
+								<div class="item__photo">
+									<img src="./pic/item-5.jpg" class="img-contain" alt="">
+								</div>
+								<span class="item__title">Часы Victorinox<br> 241552.1 Officer`s</span>
+								<div class="item-prices">
+									<div class="item-prices__row">
+										<span class="item-prices__col">47 830 Р</span>
+									</div>
+								</div>
+							</div>
+							<div class="item-more">
+								<div class="item-more__content">
+									<div class="item__text"> В рассрочку — <strong>от 9 568 Р/мес.</strong>
+									</div>
+									<button class="btn btn_md btn_primary item__btn is-mobile">Купить</button>
+									<div class="item__text">
+										<a href="#" class="link link_underlined">Добавить к сравнению</a>
+									</div>
+									<span class="item__text">Мужские, механические с автоподзаводом, стекло минеральное с сапфировым покрытием.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-grid__col">
+						<div class="item">
+							<div class="item-main">
+								<div class="item-favorite js-toggle-favorite">
+									<svg class="item-favorite__icon">
+										<use xlink:href="./img/sprite.svg#heart"></use>
+									</svg>
+								</div>
+								<div class="item__photo">
+									<img src="./pic/item-6.jpg" class="img-contain" alt="">
+								</div>
+								<span class="item__title">Часы Victorinox<br> 241552.1 Officer`s</span>
+								<div class="item-prices">
+									<div class="item-prices__row">
+										<span class="item-prices__col">47 830 Р</span>
+									</div>
+								</div>
+							</div>
+							<div class="item-more">
+								<div class="item-more__content">
+									<div class="item__text"> В рассрочку — <strong>от 9 568 Р/мес.</strong>
+									</div>
+									<button class="btn btn_md btn_primary item__btn is-mobile">Купить</button>
+									<div class="item__text">
+										<a href="#" class="link link_underlined">Добавить к сравнению</a>
+									</div>
+									<span class="item__text">Мужские, механические с автоподзаводом, стекло минеральное с сапфировым покрытием.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-grid__col">
+						<div class="item">
+							<div class="item-main">
+								<div class="item-favorite js-toggle-favorite">
+									<svg class="item-favorite__icon">
+										<use xlink:href="./img/sprite.svg#heart"></use>
+									</svg>
+								</div>
+								<div class="item__photo">
+									<img src="./pic/item-7.jpg" class="img-contain" alt="">
+								</div>
+								<span class="item__title">Часы Victorinox<br> 241552.1 Officer`s</span>
+								<div class="item-prices">
+									<div class="item-prices__row">
+										<span class="item-prices__col">47 830 Р</span>
+									</div>
+								</div>
+							</div>
+							<div class="item-more">
+								<div class="item-more__content">
+									<div class="item__text"> В рассрочку — <strong>от 9 568 Р/мес.</strong>
+									</div>
+									<button class="btn btn_md btn_primary item__btn is-mobile">Купить</button>
+									<div class="item__text">
+										<a href="#" class="link link_underlined">Добавить к сравнению</a>
+									</div>
+									<span class="item__text">Мужские, механические с автоподзаводом, стекло минеральное с сапфировым покрытием.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-grid__col">
+						<div class="item">
+							<div class="item-main">
+								<div class="item-favorite js-toggle-favorite">
+									<svg class="item-favorite__icon">
+										<use xlink:href="./img/sprite.svg#heart"></use>
+									</svg>
+								</div>
+								<div class="item__photo">
+									<img src="./pic/item-1.jpg" class="img-contain" alt="">
+								</div>
+								<span class="item__title">Часы Victorinox<br> 241552.1 Officer`s</span>
+								<div class="item-prices">
+									<div class="item-prices__row">
+										<span class="item-prices__col">47 830 Р</span>
+									</div>
+								</div>
+							</div>
+							<div class="item-more">
+								<div class="item-more__content">
+									<div class="item__text"> В рассрочку — <strong>от 9 568 Р/мес.</strong>
+									</div>
+									<button class="btn btn_md btn_primary item__btn is-mobile">Купить</button>
+									<div class="item__text">
+										<a href="#" class="link link_underlined">Добавить к сравнению</a>
+									</div>
+									<span class="item__text">Мужские, механические с автоподзаводом, стекло минеральное с сапфировым покрытием.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-grid__col">
+						<div class="item">
+							<div class="item-main">
+								<div class="item-favorite js-toggle-favorite">
+									<svg class="item-favorite__icon">
+										<use xlink:href="./img/sprite.svg#heart"></use>
+									</svg>
+								</div>
+								<div class="item__photo">
+									<img src="./pic/item-2.jpg" class="img-contain" alt="">
+								</div>
+								<span class="item__title">Часы Victorinox<br> 241552.1 Officer`s</span>
+								<div class="item-prices">
+									<div class="item-prices__row">
+										<span class="item-prices__col">47 830 Р</span>
+									</div>
+								</div>
+							</div>
+							<div class="item-more">
+								<div class="item-more__content">
+									<div class="item__text"> В рассрочку — <strong>от 9 568 Р/мес.</strong>
+									</div>
+									<button class="btn btn_md btn_primary item__btn is-mobile">Купить</button>
+									<div class="item__text">
+										<a href="#" class="link link_underlined">Добавить к сравнению</a>
+									</div>
+									<span class="item__text">Мужские, механические с автоподзаводом, стекло минеральное с сапфировым покрытием.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-grid__col">
+						<div class="item">
+							<div class="item-main">
+								<div class="item-favorite js-toggle-favorite">
+									<svg class="item-favorite__icon">
+										<use xlink:href="./img/sprite.svg#heart"></use>
+									</svg>
+								</div>
+								<div class="item__photo">
+									<img src="./pic/item-3.jpg" class="img-contain" alt="">
+								</div>
+								<span class="item__title">Часы Victorinox<br> 241552.1 Officer`s</span>
+								<div class="item-prices">
+									<div class="item-prices__row">
+										<span class="item-prices__col">47 830 Р</span>
+									</div>
+								</div>
+							</div>
+							<div class="item-more">
+								<div class="item-more__content">
+									<div class="item__text"> В рассрочку — <strong>от 9 568 Р/мес.</strong>
+									</div>
+									<button class="btn btn_md btn_primary item__btn is-mobile">Купить</button>
+									<div class="item__text">
+										<a href="#" class="link link_underlined">Добавить к сравнению</a>
+									</div>
+									<span class="item__text">Мужские, механические с автоподзаводом, стекло минеральное с сапфировым покрытием.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-grid__col">
+						<div class="item">
+							<div class="item-main">
+								<div class="item-favorite js-toggle-favorite">
+									<svg class="item-favorite__icon">
+										<use xlink:href="./img/sprite.svg#heart"></use>
+									</svg>
+								</div>
+								<div class="item__photo">
+									<img src="./pic/item-4.jpg" class="img-contain" alt="">
+								</div>
+								<span class="item__title">Часы Victorinox<br> 241552.1 Officer`s</span>
+								<div class="item-prices">
+									<div class="item-prices__row">
+										<span class="item-prices__col">47 830 Р</span>
+									</div>
+								</div>
+							</div>
+							<div class="item-more">
+								<div class="item-more__content">
+									<div class="item__text"> В рассрочку — <strong>от 9 568 Р/мес.</strong>
+									</div>
+									<button class="btn btn_md btn_primary item__btn is-mobile">Купить</button>
+									<div class="item__text">
+										<a href="#" class="link link_underlined">Добавить к сравнению</a>
+									</div>
+									<span class="item__text">Мужские, механические с автоподзаводом, стекло минеральное с сапфировым покрытием.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-grid__col">
+						<div class="item">
+							<div class="item-main">
+								<div class="item-favorite js-toggle-favorite">
+									<svg class="item-favorite__icon">
+										<use xlink:href="./img/sprite.svg#heart"></use>
+									</svg>
+								</div>
+								<div class="item__photo">
+									<img src="./pic/item-5.jpg" class="img-contain" alt="">
+								</div>
+								<span class="item__title">Часы Victorinox<br> 241552.1 Officer`s</span>
+								<div class="item-prices">
+									<div class="item-prices__row">
+										<span class="item-prices__col">47 830 Р</span>
+									</div>
+								</div>
+							</div>
+							<div class="item-more">
+								<div class="item-more__content">
+									<div class="item__text"> В рассрочку — <strong>от 9 568 Р/мес.</strong>
+									</div>
+									<button class="btn btn_md btn_primary item__btn is-mobile">Купить</button>
+									<div class="item__text">
+										<a href="#" class="link link_underlined">Добавить к сравнению</a>
+									</div>
+									<span class="item__text">Мужские, механические с автоподзаводом, стекло минеральное с сапфировым покрытием.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog-all">
+					<a href="#" class="btn btn_md btn_secondary">ПОКАЗАТЬ ЕЩЕ 20</a>
+				</div>
+				<div class="catalog-controls">
+					<div class="catalog-controls__col">
+						<div class="pages">
+							<div class="pages__col">
+								<span class="pages__text">Показать:</span>
+							</div>
+							<div class="pages__col">
+								<span class="pages__text pages__text_active">20</span>
+							</div>
+							<div class="pages__col">
+								<a href="#" class="pages__text pages__text_link">
+									<span>30</span>
+								</a>
+							</div>
+							<div class="pages__col">
+								<a href="#" class="pages__text pages__text_link">
+									<span>60</span>
+								</a>
+							</div>
+							<div class="pages__col">
+								<a href="#" class="pages__text pages__text_link">
+									<span>100</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-controls__col">
+						<div class="pages">
+							<div class="pages__col">
+								<a href="#" class="pages__text link">Назад</a>
+							</div>
+							<div class="pages__col">
+								<span class="pages__text pages__text_active">1</span>
+							</div>
+							<div class="pages__col">
+								<a href="#" class="pages__text pages__text_link">
+									<span>2</span>
+								</a>
+							</div>
+							<div class="pages__col">
+								<a href="#" class="pages__text pages__text_link">
+									<span>3</span>
+								</a>
+							</div>
+							<div class="pages__col">
+								<a href="#" class="pages__text pages__text_link">
+									<span>4</span>
+								</a>
+							</div>
+							<div class="pages__col">
+								<span class="pages__text">...</span>
+							</div>
+							<div class="pages__col">
+								<a href="#" class="pages__text pages__text_link link">
+									<span>55</span>
+								</a>
+							</div>
+							<div class="pages__col">
+								<a href="#" class="pages__text link">Вперед</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="viewed">
+			<div class="container">
+				<div class="viewed__row">
+					<span class="title">Ранее вы смотрели</span>
+					<div class="viewed-list js-viewed slick-has-arrows">
+						<div class="viewed-list__col">
+							<a href="#" class="viewed-item">
+								<div class="viewed-item__pic">
+									<img src="./pic/viewed-1.jpg" class="img-contain" alt="">
+								</div>
+								<span class="viewed-item__price">31 900 Р</span>
+							</a>
+						</div>
+						<div class="viewed-list__col">
+							<a href="#" class="viewed-item">
+								<div class="viewed-item__pic">
+									<img src="./pic/viewed-2.jpg" class="img-contain" alt="">
+								</div>
+								<span class="viewed-item__price">83 300 Р</span>
+							</a>
+						</div>
+						<div class="viewed-list__col">
+							<a href="#" class="viewed-item">
+								<div class="viewed-item__pic">
+									<img src="./pic/viewed-3.jpg" class="img-contain" alt="">
+								</div>
+								<span class="viewed-item__price">79 800 Р</span>
+							</a>
+						</div>
+						<div class="viewed-list__col">
+							<a href="#" class="viewed-item">
+								<div class="viewed-item__pic">
+									<img src="./pic/viewed-4.jpg" class="img-contain" alt="">
+								</div>
+								<span class="viewed-item__price">5 990 Р</span>
+							</a>
+						</div>
+						<div class="viewed-list__col">
+							<a href="#" class="viewed-item">
+								<div class="viewed-item__pic">
+									<img src="./pic/viewed-5.jpg" class="img-contain" alt="">
+								</div>
+								<span class="viewed-item__price">31 900 Р</span>
+							</a>
+						</div>
+						<div class="viewed-list__col">
+							<a href="#" class="viewed-item">
+								<div class="viewed-item__pic">
+									<img src="./pic/viewed-3.jpg" class="img-contain" alt="">
+								</div>
+								<span class="viewed-item__price">79 800 Р</span>
+							</a>
+						</div>
+						<div class="viewed-list__col">
+							<a href="#" class="viewed-item">
+								<div class="viewed-item__pic">
+									<img src="./pic/viewed-4.jpg" class="img-contain" alt="">
+								</div>
+								<span class="viewed-item__price">5 990 Р</span>
+							</a>
+						</div>
+						<div class="viewed-list__col">
+							<a href="#" class="viewed-item">
+								<div class="viewed-item__pic">
+									<img src="./pic/viewed-5.jpg" class="img-contain" alt="">
+								</div>
+								<span class="viewed-item__price">31 900 Р</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__row">
+				<div class="footer__grid">
+					<div class="footer__col footer__contacts">
+						<span class="footer__title">Свяжитесь с нами</span>
+						<div class="footer-contacts">
+							<div class="footer-contacts__item">
+								<a href="tel:84998774906" class="footer-contacts__link"><strong>8 (499) 877-49-06</strong></a>
+							</div>
+							<span class="footer-contacts__item">Часы работы<br> Пн–Вс 10:00–22:00</span>
+							<div class="footer-contacts__item">
+								<a href="mailto:zakaz@4-izmerenie.ru" class="footer-contacts__link">zakaz@4-izmerenie.ru</a>
+							</div>
+						</div>
+						<button class="btn btn_md btn_light footer__btn">Перезвоните мне</button>
+					</div>
+					<div class="footer__col footer__nav">
+						<span class="footer__title is-nav">О компании</span>
+						<div class="footer-nav">
+							<div class="footer-nav__item">
+								<a href="#" class="link link_light">О нас</a>
+							</div>
+							<div class="footer-nav__item">
+								<a href="#" class="link link_light">Контакты</a>
+							</div>
+							<div class="footer-nav__item">
+								<a href="#" class="link link_light">B2B</a>
+							</div>
+							<div class="footer-nav__item">
+								<a href="#" class="link link_light">Магазины</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__col footer__nav">
+						<span class="footer__title is-nav">Покупателям</span>
+						<div class="footer-nav">
+							<div class="footer-nav__item">
+								<a href="#" class="link link_light">Акции и распродажи</a>
+							</div>
+							<div class="footer-nav__item">
+								<a href="#" class="link link_light">Блог</a>
+							</div>
+							<div class="footer-nav__item">
+								<a href="#" class="link link_light">Доставка и оплата</a>
+							</div>
+							<div class="footer-nav__item">
+								<a href="#" class="link link_light">Гарантия</a>
+							</div>
+							<div class="footer-nav__item">
+								<a href="#" class="link link_light">Возврат</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__col footer__nav footer__nav_social">
+						<span class="footer__title">Мы в соц. сетях</span>
+						<div class="footer-social">
+							<div class="footer-social__col">
+								<a href="#" class="footer-social__item">
+									<svg class="footer-social__icon">
+										<use xlink:href="./img/sprite.svg#vkontakte"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="footer-social__col">
+								<a href="#" class="footer-social__item">
+									<svg class="footer-social__icon">
+										<use xlink:href="./img/sprite.svg#facebook"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="footer-social__col">
+								<a href="#" class="footer-social__item">
+									<svg class="footer-social__icon">
+										<use xlink:href="./img/sprite.svg#instagram"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="footer-yandex_tablet">
+							<img src="./pic/ymarket.png" alt="">
+						</div>
+					</div>
+					<div class="footer__col footer__nav footer__nav_sub">
+						<img src="./pic/ymarket.png" alt="">
+					</div>
+				</div>
+				<div class="footer__grid footer__grid_bottom">
+					<div class="footer__col footer__copy">
+						<span class="footer__text">© 1999-2020 «Четвёртое Измерение».<br> Предложения на данном сайте не являются публичной офертой.</span>
+					</div>
+					<div class="footer__col footer__author">
+						<span class="footer__text">Дизайн сайта — <a href="#" class="link link_light"><strong>RUFORMAT®</strong></a></span>
+					</div>
+					<div class="footer__col footer__privacy">
+						<span class="footer__text"><a href="#" class="link link_light">Политика конфиденциальности</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-connect">
+			<div class="footer-connect__row">
+				<a href="#" class="footer-connect__item">
+					<svg class="footer-connect__icon">
+						<use xlink:href="./img/sprite.svg#chat"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="footer-connect__row">
+				<a href="#" class="footer-connect__item">
+					<svg class="footer-connect__icon">
+						<use xlink:href="./img/sprite.svg#whatsapp"></use>
+					</svg>
+				</a>
+			</div>
+		</div>
+		<div class="footer-go-top">
+			<svg class="footer-go-top__icon">
+				<use xlink:href="./img/sprite.svg#go-top"></use>
+			</svg>
+		</div>
+	</footer>
+</div>
+<script src="./js/libs.js"></script>
+<script src="./js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<title>4 измерение</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<link href="./css/styles.css" rel="stylesheet">
+	<body>
+		<div class="wrapper">
+			<header class="header header_inner">
+				<div class="panel">
+					<div class="container panel__container">
+						<div class="panel_row">
+							<div class="panel_contacts">
+								<div class="panel_contacts__item">
+									<div class="panel_location">
+										<span class="panel_location__text">Москва</span>
+										<svg class="panel_location__arrow">
+											<use xlink:href="./img/sprite.svg#arrow-mini"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="panel_contacts__item">
+									<a href="tel:+78004442474" class="panel_contacts__text">8 (800) 444-24-74</a>
+								</div>
+								<div class="panel_contacts__item">
+									<a href="#" class="panel_contacts__text panel_contacts__link">WhatsApp</a>
+								</div>
+								<div class="panel_contacts__item panel_contacts__item_call">
+									<span class="panel_contacts__text panel_contacts__link">Заказать звонок</span>
+								</div>
+							</div>
+							<div class="panel_menu">
+								<a href="#" class="panel_menu__item">Доставка и оплата</a>
+								<a href="#" class="panel_menu__item">Гарантия</a>
+								<a href="#" class="panel_menu__item">Возврат</a>
+								<a href="#" class="panel_menu__item">B2B</a>
+								<a href="#" class="panel_menu__item">Отзывы</a>
+								<a href="#" class="panel_menu__item">Акции</a>
+								<a href="#" class="panel_menu__item">Блог</a>
+							</div>
+							<a href="#" class="panel_account">
+								<svg class="panel_account__icon">
+									<use xlink:href="./img/sprite.svg#person"></use>
+								</svg>
+								<span class="panel_account__text">Личный кабинет</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="header_row">
+						<div class="header_nav">
+							<span><i></i></span>
+						</div>
+						<div class="header_logo">
+							<a href="/" class="header_logo__link">
+								<div class="logo">
+									<svg class="logo_icon">
+										<use xlink:href="./img/sprite.svg#logo"></use>
+									</svg>
+									<span class="logo_text">етвертое измерение</span>
+									<span class="logo_subtext">cеть часовых магазинов</span>
+								</div>
+							</a>
+						</div>
+						<div class="header_menu">
+							<div class="header_menu_item">
+								<a href="#" class="header_menu_link">Часы</a>
+							</div>
+							<div class="header_menu_item">
+								<a href="#" class="header_menu_link">Аксессуары</a>
+							</div>
+							<div class="header_menu_item">
+								<a href="#" class="header_menu_link">Бренды</a>
+							</div>
+							<div class="header_menu_item">
+								<a href="#" class="header_menu_link">Распродажа</a>
+							</div>
+							<div class="header_menu_item">
+								<a href="#" class="header_menu_link">Подарочные сертификаты</a>
+							</div>
+						</div>
+						<form action="#" class="header_search">
+							<input type="text" class="header_search__input" placeholder="Найти">
+							<button type="submit" class="header_search__btn">
+								<svg class="header_search__icon">
+									<use xlink:href="./img/sprite.svg#lens"></use>
+								</svg>
+							</button>
+						</form>
+						<div class="header_services">
+							<div class="header_services__item">
+								<a href="#" class="header_services__link">
+									<svg class="header_services__icon header_services__icon_heart">
+										<use xlink:href="./img/sprite.svg#heart"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="header_services__item">
+								<a href="#" class="header_services__link">
+									<svg class="header_services__icon header_services__icon_basket">
+										<use xlink:href="./img/sprite.svg#basket"></use>
+									</svg>
+									<span class="header_services__amount">2</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="inner">
+				<section class="gifts">
+					<div class="container">
+						<div class="gifts__row">
+							<h1 class="title gifts__title">Подарочные сертификаты</h1>
+							<div class="gifts-intro">
+								<div class="gifts-intro__col">
+									<div class="gifts-intro-card">
+										<img src="./pic/gifts-cards.png" alt="" class="gifts-intro-card__pic">
+									</div>
+								</div>
+								<div class="gifts-intro__col">
+									<div class="gifts-intro__content">
+										<div class="gifts-intro__list">
+											<div class="gifts-intro__item">
+												<span class="gifts-intro__title">Применение</span>
+												<span class="gifts-intro__text">Действует на все товары в каталоге</span>
+											</div>
+											<div class="gifts-intro__item">
+												<span class="gifts-intro__title">Срок действия</span>
+												<span class="gifts-intro__text">Срок действия неограничен. Можете воспользоваться, когда захотите</span>
+											</div>
+											<div class="gifts-intro__item">
+												<span class="gifts-intro__title">Получатель</span>
+												<span class="gifts-intro__text">Можно отправить себе или получателю</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="gifts-grid" data-tabs>
+								<div class="gifts-grid__col">
+									<div class="gifts-form">
+										<div class="gifts-form-type">
+											<span class="gifts-form-type__title">Тип сертификата</span>
+											<div class="gifts-form-type__row">
+												<div class="gifts-form-type__col">
+													<label class="radio" data-tab-open="1">
+														<input type="radio" name="gifts-card-type" value="1" checked>
+														<span class="radio__text">Цифровой<br> (по электронной почте)</span>
+													</label>
+												</div>
+												<div class="gifts-form-type__col">
+													<label class="radio" data-tab-open="2">
+														<input type="radio" name="gifts-card-type" value="2">
+														<span class="radio__text">Пластиковый<br> (в конверте)</span>
+													</label>
+												</div>
+											</div>
+										</div>
+										<div data-container-mobile="1"></div>
+										<div class="gifts-form__list is-opened" data-tab-target="1">
+											<div class="gifts-form__item">
+												<div class="field">
+													<label class="field__label">
+														<span class="field__title">Сумма (минимум 1000 ₽)</span>
+														<input type="text" class="field__input field__input_currency" value="1000">
+														<span class="field__currency">₽</span>
+													</label>
+												</div>
+											</div>
+											<div class="gifts-form__item">
+												<div class="field">
+													<label class="field__label">
+														<span class="field__title">Имя получателя</span>
+														<input type="text" class="field__input" data-content-input="name">
+													</label>
+												</div>
+											</div>
+											<div class="gifts-form__item">
+												<div class="field">
+													<label class="field__label">
+														<span class="field__title">Текст поздравления</span>
+														<textarea class="field__textarea" rows="3" data-content-input="text"></textarea>
+													</label>
+												</div>
+											</div>
+											<div class="gifts-form__item">
+												<div class="field">
+													<label class="field__label">
+														<span class="field__title">Ваш телефон</span>
+														<input type="text" class="field__input">
+													</label>
+												</div>
+											</div>
+											<div class="gifts-form__item">
+												<div class="field">
+													<label class="field__label">
+														<span class="field__title">Ваш e-mail</span>
+														<input type="text" class="field__input">
+													</label>
+												</div>
+											</div>
+											<div class="gifts-form__item">
+												<div class="field">
+													<label class="field__label">
+														<span class="field__title">Ваши ФИО</span>
+														<input type="text" class="field__input">
+													</label>
+												</div>
+											</div>
+											<div class="gifts-form__checkbox">
+												<label class="checkbox">
+													<input type="checkbox" class="checkbox__input" name="">
+													<div class="checkbox-icon">
+														<svg class="checkbox-icon__svg">
+															<use xlink:href="./img/sprite.svg#check"></use>
+														</svg>
+													</div>
+													<span class="checkbox__text">Отправьте сертификат мне, я сам его перешлю</span>
+												</label>
+											</div>
+											<div class="gifts-form__item">
+												<div class="field">
+													<label class="field__label">
+														<span class="field__title">E-mail получателя</span>
+														<input type="text" class="field__input">
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="gifts-form__list" data-tab-target="2">
+											<div class="gifts-form__item">
+												<div class="field">
+													<label class="field__label">
+														<span class="field__title">Сумма (минимум 1000 ₽)</span>
+														<input type="text" class="field__input field__input_currency" value="1000">
+														<span class="field__currency">₽</span>
+													</label>
+												</div>
+											</div>
+											<div class="gifts-form__item">
+												<div class="field">
+													<label class="field__label">
+														<span class="field__title">Доставка в город</span>
+														<select class="field__select">
+															<option value="">Москва</option>
+															<option value="">Казань</option>
+														</select>
+													</label>
+												</div>
+											</div>
+											<div class="gifts-form-list">
+												<div class="gifts-form-list__item">
+													<label class="radio">
+														<input type="radio" name="delivery-type" value="1" checked>
+														<span class="radio__text">Курьерская доставка СДЭК - 400 ₽<br> (до 04.08.2021)</span>
+													</label>
+												</div>
+												<div class="gifts-form-list__item">
+													<label class="radio">
+														<input type="radio" name="delivery-type" value="2">
+														<span class="radio__text">Самовывоз из пункта выдачи СДЭК - 300 ₽<br> (до 02.08.2021)</span>
+													</label>
+												</div>
+											</div>
+											<div class="gifts-form__item">
+												<div class="field">
+													<label class="field__label">
+														<span class="field__title">Выберите пункт самовывоза</span>
+														<select class="field__select">
+															<option selected disabled>100 пунктов самовывоза</option>
+															<option value="">Пункт 1</option>
+															<option value="">Пункт 2</option>
+														</select>
+													</label>
+												</div>
+											</div>
+											<div class="gifts-form__item">
+												<div class="field">
+													<label class="field__label">
+														<span class="field__title">Ваш телефон</span>
+														<input type="text" class="field__input">
+													</label>
+												</div>
+											</div>
+											<div class="gifts-form__item">
+												<div class="field">
+													<label class="field__label">
+														<span class="field__title">Ваш e-mail</span>
+														<input type="text" class="field__input">
+													</label>
+												</div>
+											</div>
+											<div class="gifts-form__item">
+												<div class="field">
+													<label class="field__label">
+														<span class="field__title">Ваши ФИО</span>
+														<input type="text" class="field__input">
+													</label>
+												</div>
+											</div>
+											<div class="gifts-form__checkbox">
+												<label class="checkbox">
+													<input type="checkbox" class="checkbox__input" name="">
+													<div class="checkbox-icon">
+														<svg class="checkbox-icon__svg">
+															<use xlink:href="./img/sprite.svg#check"></use>
+														</svg>
+													</div>
+													<span class="checkbox__text">Отправьте сертификат мне, я сам его перешлю</span>
+												</label>
+											</div>
+											<div class="gifts-form__item">
+												<div class="field">
+													<label class="field__label">
+														<span class="field__title">E-mail получателя</span>
+														<input type="text" class="field__input">
+													</label>
+												</div>
+											</div>
+											<div class="gifts-form__item">
+												<div class="field">
+													<label class="field__label">
+														<span class="field__title">ФИО получателя</span>
+														<input type="text" class="field__input">
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="gifts-grid__col">
+									<div data-container-desktop="1">
+										<div class="gifts-card" data-colors data-container-el="1">
+											<div class="gifts-card-head is-opened" data-tab-target="1">
+												<span class="gifts-card-head__title" data-content-result="name">Имя получателя</span>
+												<span class="gifts-card-head__text" data-content-result="text">Текст поздравления</span>
+											</div>
+											<div class="gifts-card-core" data-color-active data-bg="gold">
+												<div class="logo gifts-card-core__logo">
+													<svg class="logo_icon">
+														<use xlink:href="./img/sprite.svg#logo"></use>
+													</svg>
+													<span class="logo_text">етвертое измерение</span>
+													<span class="logo_subtext">cеть часовых магазинов</span>
+												</div>
+												<span class="gifts-card-core__title">Подарочный сертификат</span>
+											</div>
+											<div class="gifts-card-preview">
+												<span class="gifts-card-preview__title">Цвет:</span>
+												<div class="gifts-card-preview__item is-active" data-color-val="gold">
+													<i class="gifts-card-preview__bg" data-bg="gold"></i>
+												</div>
+												<div class="gifts-card-preview__item" data-color-val="silver">
+													<i class="gifts-card-preview__bg" data-bg="silver"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="gifts-total">
+										<div class="gifts-total__head">
+											<span class="gifts-total__text">Сумма к оплате: <strong>1 000 ₽</strong></span>
+											<div data-tab-target="2">
+												<span class="gifts-total__text">Доставка до пункта самовывоза: <strong>300 ₽</strong></span>
+												<span class="gifts-total__text gifts-total__final">Сумма к оплате: <strong>1 300 ₽</strong></span>
+											</div>
+										</div>
+										<button class="btn btn_md2 btn_primary">Перейти к оплате</button>
+										<span class="gifts-total__text gifts-total__agreement">Нажимая на кнопку «Перейти к оплате», вы соглашаетесь на <a href="#" class="link link_underlined">обработку персональных данных</a></span>
+									</div>
+								</div>
+							</div>
+							<div class="gifts-faq">
+								<div class="faq">
+									<div class="faq__item">
+										<span class="faq__title">Мне подарили сертификат, как им воспользоваться?</span>
+										<div class="faq__content">
+											<span class="faq__text">Войдите в свой профиль на сайте chrono.ru. Если вы еще не зарегистрированы, сделайте это, используя электронную почту или номер телефона. Для активации сертификата необходим ввод уникального промокода, присланного на почту e-mail или переданного в заказном конверте. Активировать промокод при оплате товара можно на сайте chrono.ru</span>
+										</div>
+									</div>
+									<div class="faq__item">
+										<span class="faq__title">Мне подошли не все вещи из заказа с подарочным сертификатом. Это значит, что средства на сертификате сгорят?</span>
+										<div class="faq__content">
+											<span class="faq__text">Войдите в свой профиль на сайте chrono.ru. Если вы еще не зарегистрированы, сделайте это, используя электронную почту или номер телефона. Для активации сертификата необходим ввод уникального промокода, присланного на почту e-mail или переданного в заказном конверте. Активировать промокод при оплате товара можно на сайте chrono.ru</span>
+										</div>
+									</div>
+									<div class="faq__item">
+										<span class="faq__title">Могу ли я доплатить, если сертификат покрывает не всю сумму заказа?</span>
+										<div class="faq__content">
+											<span class="faq__text">Войдите в свой профиль на сайте chrono.ru. Если вы еще не зарегистрированы, сделайте это, используя электронную почту или номер телефона. Для активации сертификата необходим ввод уникального промокода, присланного на почту e-mail или переданного в заказном конверте. Активировать промокод при оплате товара можно на сайте chrono.ru</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__row">
+						<div class="footer__grid">
+							<div class="footer__col footer__contacts">
+								<span class="footer__title">Свяжитесь с нами</span>
+								<div class="footer-contacts">
+									<div class="footer-contacts__item">
+										<a href="tel:84998774906" class="footer-contacts__link"><strong>8 (499) 877-49-06</strong></a>
+									</div>
+									<span class="footer-contacts__item">Часы работы<br> Пн–Вс 10:00–22:00</span>
+									<div class="footer-contacts__item">
+										<a href="mailto:zakaz@4-izmerenie.ru" class="footer-contacts__link">zakaz@4-izmerenie.ru</a>
+									</div>
+								</div>
+								<button class="btn btn_md btn_light footer__btn">Перезвоните мне</button>
+							</div>
+							<div class="footer__col footer__nav">
+								<span class="footer__title is-nav">О компании</span>
+								<div class="footer-nav">
+									<div class="footer-nav__item">
+										<a href="#" class="link link_light">О нас</a>
+									</div>
+									<div class="footer-nav__item">
+										<a href="#" class="link link_light">Контакты</a>
+									</div>
+									<div class="footer-nav__item">
+										<a href="#" class="link link_light">B2B</a>
+									</div>
+									<div class="footer-nav__item">
+										<a href="#" class="link link_light">Магазины</a>
+									</div>
+								</div>
+							</div>
+							<div class="footer__col footer__nav">
+								<span class="footer__title is-nav">Покупателям</span>
+								<div class="footer-nav">
+									<div class="footer-nav__item">
+										<a href="#" class="link link_light">Акции и распродажи</a>
+									</div>
+									<div class="footer-nav__item">
+										<a href="#" class="link link_light">Блог</a>
+									</div>
+									<div class="footer-nav__item">
+										<a href="#" class="link link_light">Доставка и оплата</a>
+									</div>
+									<div class="footer-nav__item">
+										<a href="#" class="link link_light">Гарантия</a>
+									</div>
+									<div class="footer-nav__item">
+										<a href="#" class="link link_light">Возврат</a>
+									</div>
+								</div>
+							</div>
+							<div class="footer__col footer__nav footer__nav_social">
+								<span class="footer__title">Мы в соц. сетях</span>
+								<div class="footer-social">
+									<div class="footer-social__col">
+										<a href="#" class="footer-social__item">
+											<svg class="footer-social__icon">
+												<use xlink:href="./img/sprite.svg#vkontakte"></use>
+											</svg>
+										</a>
+									</div>
+									<div class="footer-social__col">
+										<a href="#" class="footer-social__item">
+											<svg class="footer-social__icon">
+												<use xlink:href="./img/sprite.svg#facebook"></use>
+											</svg>
+										</a>
+									</div>
+									<div class="footer-social__col">
+										<a href="#" class="footer-social__item">
+											<svg class="footer-social__icon">
+												<use xlink:href="./img/sprite.svg#instagram"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="footer-yandex_tablet">
+									<img src="./pic/ymarket.png" alt="">
+								</div>
+							</div>
+							<div class="footer__col footer__nav footer__nav_sub">
+								<img src="./pic/ymarket.png" alt="">
+							</div>
+						</div>
+						<div class="footer__grid footer__grid_bottom">
+							<div class="footer__col footer__copy">
+								<span class="footer__text">© 1999-2020 «Четвёртое Измерение».<br> Предложения на данном сайте не являются публичной офертой.</span>
+							</div>
+							<div class="footer__col footer__author">
+								<span class="footer__text">Дизайн сайта — <a href="#" class="link link_light"><strong>RUFORMAT®</strong></a></span>
+							</div>
+							<div class="footer__col footer__privacy">
+								<span class="footer__text"><a href="#" class="link link_light">Политика конфиденциальности</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-connect">
+					<div class="footer-connect__row">
+						<a href="#" class="footer-connect__item">
+							<svg class="footer-connect__icon">
+								<use xlink:href="./img/sprite.svg#chat"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="footer-connect__row">
+						<a href="#" class="footer-connect__item">
+							<svg class="footer-connect__icon">
+								<use xlink:href="./img/sprite.svg#whatsapp"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="footer-go-top">
+					<svg class="footer-go-top__icon">
+						<use xlink:href="./img/sprite.svg#go-top"></use>
+					</svg>
+				</div>
+			</footer>
+		</div>
+		<script src="./js/libs.js"></script>
+		<script src="./js/scripts.js"></script>
+	</body>
+</html>

@@ -67,7 +67,7 @@
         <line x1="18" y1="5" x2="24" y2="5" stroke-width="2"/>
     </symbol>
     <symbol id="close" viewBox="0 0 24 24" fill="none">
-        <path d="M5 19L19 5M19 19L5 5" stroke="white" stroke-width="1.5"/>
+        <path d="M5 19L19 5M19 19L5 5" stroke-width="1.5"/>
     </symbol>
     <symbol id="share" viewBox="0 0 24 25" fill="none">
         <path d="M17.125 8.88672C18.5747 8.88672 19.75 7.71147 19.75 6.26172C19.75 4.81197 18.5747 3.63672 17.125 3.63672C15.6753 3.63672 14.5 4.81197 14.5 6.26172C14.5 7.71147 15.6753 8.88672 17.125 8.88672Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -79,5 +79,36 @@
     <symbol id="star" viewBox="0 0 16 15">
         <path d="M8 0L9.92794 5.34642L15.6085 5.52786L11.1195 9.01358L12.7023 14.4721L8 11.28L3.29772 14.4721L4.88053 9.01358L0.391548 5.52786L6.07206 5.34642L8 0Z"/>
     </symbol>
-
+    <symbol id="check" viewBox="0 0 12 10" fill="none">
+        <path d="M0.5 3.21022L4.91016 8.35651L11.4991 0.696289"/>
+    </symbol>
+    <symbol id="eye" viewBox="0 0 24 24" fill="none">
+        <path d="M12.0001 17.651C11.0293 17.651 9.82898 17.2771 8.53874 16.671C7.25899 16.0699 5.93862 15.2635 4.74138 14.4497C3.54575 13.637 2.48234 12.8233 1.7174 12.2122C1.40214 11.9604 1.13802 11.7434 0.936742 11.5755C1.13802 11.4076 1.40214 11.1906 1.71741 10.9387C2.48234 10.3277 3.54575 9.51398 4.74138 8.70126C5.93863 7.88743 7.25899 7.08112 8.53874 6.47998C9.82898 5.87391 11.0293 5.5 12.0001 5.5C12.9708 5.5 14.1711 5.87391 15.4614 6.47998C16.7411 7.08112 18.0615 7.88743 19.2587 8.70126C20.4544 9.51398 21.5178 10.3277 22.2827 10.9387C22.598 11.1906 22.8621 11.4076 23.0634 11.5755C22.8621 11.7434 22.598 11.9604 22.2827 12.2122C21.5178 12.8233 20.4544 13.637 19.2587 14.4497C18.0615 15.2635 16.7411 16.0699 15.4614 16.671C14.1711 17.2771 12.9708 17.651 12.0001 17.651Z"/>
+        <circle cx="12" cy="11.5752" r="3" fill="white"/>
+    </symbol>
+    <symbol id="calendar" viewBox="0 0 24 24" fill="none">
+        <rect x="3.5" y="5.5" width="16" height="15" rx="0.5"/>
+        <rect x="5.5" y="3.5" width="2" height="4" rx="1" fill="white"/>
+        <rect x="10.5" y="3.5" width="2" height="4" rx="1" fill="white"/>
+        <rect x="5.5" y="10.5" width="2" height="2" rx="0.6" fill="white"/>
+        <rect x="10.5" y="10.5" width="2" height="2" rx="0.6" fill="white"/>
+        <rect x="15.5" y="10.5" width="2" height="2" rx="0.6" fill="white"/>
+        <rect x="5.5" y="15.5" width="2" height="2" rx="0.6" fill="white"/>
+        <rect x="10.5" y="15.5" width="2" height="2" rx="0.6" fill="white"/>
+        <rect x="15.5" y="15.5" width="2" height="2" rx="0.6" fill="white"/>
+        <rect x="15.5" y="3.5" width="2" height="4" rx="1" fill="white"/>
+    </symbol>
+    <symbol id="share" viewBox="0 0 24 24" fill="none">
+        <path d="M17.125 8.25C18.5747 8.25 19.75 7.07475 19.75 5.625C19.75 4.17525 18.5747 3 17.125 3C15.6753 3 14.5 4.17525 14.5 5.625C14.5 7.07475 15.6753 8.25 17.125 8.25Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6.625 14.375C8.07475 14.375 9.25 13.1997 9.25 11.75C9.25 10.3003 8.07475 9.125 6.625 9.125C5.17525 9.125 4 10.3003 4 11.75C4 13.1997 5.17525 14.375 6.625 14.375Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M17.125 20.5C18.5747 20.5 19.75 19.3247 19.75 17.875C19.75 16.4253 18.5747 15.25 17.125 15.25C15.6753 15.25 14.5 16.4253 14.5 17.875C14.5 19.3247 15.6753 20.5 17.125 20.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M8.8916 13.0703L14.8679 16.5528" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14.8591 6.94531L8.8916 10.4278" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="arrow-left-sm" viewBox="0 0 24 24" fill="none">
+        <path d="M13.0342 20L5.03418 12L13.0342 4" stroke-width="2"/>
+    </symbol>
+    <symbol id="arrow-right-sm" viewBox="0 0 24 24" fill="none">
+        <path d="M11.0342 4L19.0342 12L11.0342 20" stroke-width="2"/>
+    </symbol>
 </svg>

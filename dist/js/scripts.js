@@ -12,6 +12,17 @@ $(function() {
         '</svg>' +
     '</button>';
 
+    var $prevIconSm = '<button class="slick-arrow slick-prev">' +
+        '<svg>' +
+            '<use xlink:href="./img/sprite.svg#arrow-left-sm"></use>' +
+        '</svg>' +
+    '</button>',
+        $nextIconSm = '<button class="slick-arrow slick-next">' +
+        '<svg>' +
+            '<use xlink:href="./img/sprite.svg#arrow-right-sm"></use>' +
+        '</svg>' +
+    '</button>';
+
     $('.js-hero').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -146,6 +157,24 @@ $(function() {
         }]
     });
 
+    $('.js-shops-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        prevArrow: $prevIconSm,
+        nextArrow: $nextIconSm,
+        cssEase: 'ease',
+        speed: 500,
+        responsive: [{
+            breakpoint: 871,
+            settings: {
+                dots: true,
+                arrows: false,
+            }
+        }]
+    });
+
     $('.js-toggle-favorite').on('click', function() {
         $(this).toggleClass('is-active');
     });
@@ -233,7 +262,15 @@ $(function() {
     function startApp() {
 		detectDevice();
 		if ( justSwitched ) {
-
+            $('[data-container-el]').each(function() {
+                var $t = $(this),
+                    id = $t.attr('data-container-el');
+                if (!isMobile) {
+                    $t.detach().appendTo($('[data-container-desktop="'+id+'"]'));
+                } else {
+                    $t.detach().appendTo($('[data-container-mobile="'+id+'"]'));
+                }
+            });
 		}
     }
 
@@ -421,5 +458,90 @@ $(function() {
             .removeClass('is-opened')
             .filter('[data-tab-target="'+id+'"]')
             .addClass('is-opened');
+    });
+
+    $('.faq__title').on('click', function() {
+        $(this).toggleClass('is-active');
+    });
+
+    $('[data-color-val]').on('click', function() {
+        var $t = $(this),
+            color = $t.attr('data-color-val'),
+            $container = $t.parents('[data-colors]'),
+            $links = $container.find('[data-color-val]'),
+            $card = $container.find('[data-color-active]');
+
+        $links.removeClass('is-active');
+        $t.addClass('is-active');
+
+        $card.attr('data-bg', color);
+    });
+
+    $('[data-content-input]').each(function() {
+        var $t = $(this),
+            id = $t.attr('data-content-input');
+        $t.on('input change keyup', function() {
+            var val = $(this).val();
+
+            $('[data-content-result="'+id+'"]').text(val);
+        });
+    });
+
+    $('[data-password-status]').on('click', function() {
+        var $t = $(this),
+            $container = $t.parents('.field'),
+            $input = $container.find('.field__input');
+
+        if (!$t.hasClass('is-visible')) {
+            $input.prop('type', 'text');
+        } else {
+            $input.prop('type', 'password');
+        }
+
+        $t.toggleClass('is-visible');
+    });
+
+    $('.js-account-drop').on('click', function() {
+        var $t = $(this),
+            $nav = $('.account-nav');
+
+        if (!$t.hasClass('is-active')) {
+            $nav.addClass('is-opened');
+        } else {
+            $nav.removeClass('is-opened');
+        }
+
+        $t.toggleClass('is-active');
+    });
+
+    function centerModal(t) {
+        var h = $(window).scrollTop()+($(window).height()-t.outerHeight())/2;
+        var diff = 30;
+        if ( isMobile ) {
+            diff = 15;
+        }
+        if ( h < $(window).scrollTop()+(diff*2) ) {
+            h = $(window).scrollTop()+diff;
+        }
+        t.css({
+            'top': h+'px'
+        });
+    }
+
+    $(document).on('click', '[data-open]', function(e) {
+        e.preventDefault();
+        $(this).addClass('is-active');
+        var t = $('[data-target="'+$(this).attr('data-open')+'"]');
+        t.siblings('[data-target]').removeClass('is-opened is-active');
+        $('.fade-bg').addClass('is-opened');
+        t.addClass('is-opened');
+        centerModal(t);
+        t.addClass('is-active').siblings('[data-target]').removeClass('is-active');
+    });
+
+    $('[data-modal-close], .fade-bg').on('click', function(e) {
+        e.preventDefault();
+        $('[data-target], .fade-bg').removeClass('is-opened');
+        $('[data-open]').removeClass('is-active');
     });
 });
