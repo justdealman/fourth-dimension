@@ -250,6 +250,60 @@
         }, 600);
     });
 
+    var $compare = $('.js-compare');
+
+    if ($compare.length > 0) {
+        $('body').append('<div class="compare-highlight js-line-highlight"></div>');
+        var $line = $('.js-line-highlight'),
+            $el = $('[data-line]');
+
+        $el.on('mouseenter', function() {
+            if (!isMobile) {
+                var $t = $(this);
+                $line.css({
+                    top: $t.offset().top,
+                    height: $t.outerHeight()
+                }).show();
+            }
+        });
+
+        $el.on('mouseleave', function() {
+            $line.hide();
+        });
+    }
+
+    function generateCompare(el) {
+        el.removeClass('is-visible');
+
+        var $lines = el.find('[data-line]'),
+            types = [];
+
+        $lines.each(function() {
+            var $t = $(this);
+            $t.css({
+                'height': 'auto'
+            });
+            var val = $t.attr('data-line');
+            types.indexOf(val) === -1 && types.push(val);
+        });
+
+        $.each(types, function(index, val) {
+            var max = 0,
+                $currentLines = $lines.filter('[data-line="'+val+'"]');
+
+            $currentLines.each(function() {
+                var $t = $(this);
+                if ($t.outerHeight() > max) {
+                    max = $t.outerHeight();
+                }
+            });
+
+            $currentLines.outerHeight(max);
+        });
+
+        el.addClass('is-visible');
+    }
+
 	var isMobile = false,
 		justSwitched = false;
 
@@ -272,6 +326,9 @@
                 }
             });
 		}
+		if ($compare.length > 0) {
+		    generateCompare($compare);
+        }
     }
 
     startApp();
@@ -543,5 +600,40 @@
         e.preventDefault();
         $('[data-target], .fade-bg').removeClass('is-opened');
         $('[data-open]').removeClass('is-active');
+    });
+
+    $('.js-certificates').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        prevArrow: $prevIcon,
+        nextArrow: $nextIcon,
+        cssEase: 'ease',
+        speed: 500,
+        responsive: [{
+            breakpoint: 871,
+            settings: {
+                arrows: false,
+                variableWidth: true,
+                infinite: false
+            }
+        }]
+    });
+
+    $('.js-compare').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        prevArrow: $prevIcon,
+        nextArrow: $nextIcon,
+        cssEase: 'ease',
+        speed: 500,
+        infinite: false,
+        responsive: [{
+            breakpoint: 871,
+            settings: 'unslick'
+        }]
     });
 });

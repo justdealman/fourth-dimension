@@ -39,6 +39,20 @@
             text-align: center;
         }
     }
+
+    &_left {
+        text-align: left;
+    }
+
+    &_sm {
+        font-size: 20px;
+        line-height: 24px;
+
+        @media @notebook {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
 }
 
 .link {
@@ -789,6 +803,7 @@
         width: 100%;
         font-size: 14px;
         padding: 11px 15px;
+        background-color: @colorWhite;
         border: 1px solid @colorGrey2;
 
         &_search {
@@ -861,10 +876,10 @@
         }
     }
 
-    &_tip {
+    &__tip {
         display: block;
         font-size: 14px;
-        line-heigth: 20px;
+        line-height: 20px;
         margin-top: 5px;
     }
 }
@@ -933,4 +948,63 @@
         font-size: 14px;
         line-height: 20px;
     }
+}
+
+.social {
+    font-size: 0;
+    margin: 0 -5px -10px;
+
+    &_center {
+        text-align: center;
+    }
+
+    &__item,
+    &__icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    &__item {
+        display: inline-block;
+        fill: @colorBlack;
+        margin: 0 5px 10px;
+
+        &:hover {
+            fill: @colorRed;
+        }
+    }
+}
+
+.table {
+    width: 100%;
+    margin: 0;
+
+    th,
+    td {
+        width: 50%;
+        font-size: 14px;
+        line-height: 20px;
+        vertical-align: top;
+        padding: 14px 20px;
+        border: 1px solid @colorGrey2;
+
+        @media @mini {
+            padding: 10px;
+        }
+    }
+
+    th {
+        font-weight: normal;
+        text-align: left;
+    }
+}
+
+.is-uppercase {
+    text-transform: uppercase;
+}
+
+.img-captcha {
+    width: 100%;
+    max-width: 286px;
+    height: 100%;
 }

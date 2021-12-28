@@ -155,6 +155,10 @@
 							<div style="margin-bottom: 20px">
 								<button class="btn btn_md2 btn_primary" data-open="buy">Купить в рассрочку</button>
 							</div>
+
+							<div style="margin-bottom: 20px">
+								<button class="btn btn_md2 btn_primary" data-open="media">Заказать фото/видео</button>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -626,7 +630,7 @@
 				<button class="btn btn_md btn_red modal__btn">Отправить отзыв</button>
 			</div>
 
-			<div class="modal modal_buy" data-target="buy" data-tabs>
+			<div class="modal modal_wide" data-target="buy" data-tabs>
 				<div class="modal-close" data-modal-close>
 					<svg class="modal-close__icon">
 						<use xlink:href="./img/sprite.svg#close"></use>
@@ -721,6 +725,90 @@
 				</div>
 
 				<button class="btn btn_md btn_red modal__btn">оформить рассрочку</button>
+
+				<span class="modal__agreement">Нажимая на кнопку «Уведомить о наличии» вы соглашаетесь с условиями <a href="#" class="link link_underlined">политики конфиденциальности</a>.</span>
+			</div>
+
+			<div class="modal modal_wide" data-target="media">
+				<div class="modal-close modal-close_light" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+				</div>
+
+				<div class="modal-head">
+					<span class="modal-head__title">ЗАКАЗАТЬ ДОПОЛНИТЕЛЬНЫЕ ФОТО И ВИДЕО ЧАСОВ</span>
+
+					<span class="modal-head__text modal-head__text_normal">От вас потребуется только телефон с мессенджером или e-mail. Наш менеджер сфотографирует и снимет модель на видео и пришлёт вам на телефон.</span>
+
+					<div class="modal-head-list">
+						<div class="modal-head-list__row">
+							<div class="modal-head-list__item">
+								<span class="modal-head-list__text modal-head-list__text_num">1.</span>
+								<span class="modal-head-list__text modal-head-list__text_content">Вы увидите, как товар выглядит в реальности.</span>
+							</div>
+
+							<div class="modal-head-list__item">
+								<span class="modal-head-list__text modal-head-list__text_num">2.</span>
+								<span class="modal-head-list__text modal-head-list__text_content">Продавец продемонстрирует часы на себе, чтоб было понятно, как они смотрятся на руке.</span>
+							</div>
+
+							<div class="modal-head-list__item">
+								<span class="modal-head-list__text modal-head-list__text_num">3.</span>
+								<span class="modal-head-list__text modal-head-list__text_content">Нет необходимости приезжать в магазин, чтобы посмотреть товар.</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="modal-head__bg modal-head__bg_darken">
+						<img src="./pic/request-media.jpg" class="img-cover" alt="">
+					</div>
+				</div>
+
+				<span class="modal__text"><strong>Швейцарские наручные часы TAG Heuer Carrera CBN2A1B.BA0643</strong></span>
+
+				<div class="modal-reviews">
+					<div class="modal-reviews__col modal-reviews__col_half">
+						<div class="field">
+							<label class="field__label">
+								<span class="field__title">Имя</span>
+								<input type="text" class="field__input" value="">
+							</label>
+						</div>
+					</div>
+
+					<div class="modal-reviews__col modal-reviews__col_half">
+						<div class="field">
+							<label class="field__label">
+								<span class="field__title">E-mail</span>
+								<input type="text" class="field__input" value="">
+							</label>
+						</div>
+					</div>
+
+					<div class="modal-reviews__col modal-reviews__col_half">
+						<div class="field">
+							<label class="field__label">
+								<span class="field__title">Телефон</span>
+								<input type="text" class="field__input" value="">
+							</label>
+						</div>
+					</div>
+
+					<div class="modal-reviews__col modal-reviews__col_half">
+						<div class="field">
+							<label class="field__label">
+								<span class="field__title">Выберите удобное для вас приложение</span>
+								<select class="field__select">
+									<option>Whatsapp</option>
+									<option>Telegram</option>
+								</select>
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<button class="btn btn_md btn_red modal__btn">Заказать</button>
 
 				<span class="modal__agreement">Нажимая на кнопку «Уведомить о наличии» вы соглашаетесь с условиями <a href="#" class="link link_underlined">политики конфиденциальности</a>.</span>
 			</div>
