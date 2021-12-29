@@ -12157,11 +12157,14 @@ button {
 	}
 }
 .reviews-nav_card {
-	margin-bottom: 40px;
+	padding-bottom: 20px;
+	margin-bottom: 37px;
+	border-bottom: 1px solid #E1E1E1;
 }
 @media (max-width: 870px) {
 	.reviews-nav_card {
-		margin-bottom: 10px;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
 	}
 }
 .reviews-nav__row {
