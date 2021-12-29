@@ -406,18 +406,18 @@
 						</div>
 					</div>
 				</section>
-				<section class="details">
+				<section class="details" data-tabs>
 					<div class="container">
 						<div class="details__row">
 							<div class="details-nav">
-								<span class="details-nav__item is-active">ОПИСАНИЕ</span>
-								<span class="details-nav__item">ГАРАНТИЯ</span>
-								<span class="details-nav__item">НАЛИЧИЕ</span>
-								<span class="details-nav__item">ДОСТАВКА</span>
-								<span class="details-nav__item">ОПЛАТА</span>
-								<span class="details-nav__item">ОТЗЫВЫ (6)</span>
+								<span class="details-nav__item is-active" data-tab-open="1">ОПИСАНИЕ</span>
+								<span class="details-nav__item" data-tab-open="2">ГАРАНТИЯ</span>
+								<span class="details-nav__item" data-tab-open="3">НАЛИЧИЕ</span>
+								<span class="details-nav__item" data-tab-open="4">ДОСТАВКА</span>
+								<span class="details-nav__item" data-tab-open="5">ОПЛАТА</span>
+								<span class="details-nav__item" data-tab-open="6">ОТЗЫВЫ (6)</span>
 							</div>
-							<div class="details-group">
+							<div class="details-group is-opened" data-tab-target="1">
 								<span class="details-nav-m is-active">Описание</span>
 								<div class="details-about">
 									<div class="details-about__row">
@@ -513,20 +513,547 @@
 									</div>
 								</div>
 							</div>
-							<div class="details-group">
+							<div class="details-group" data-tab-target="2">
 								<span class="details-nav-m">Гарантия</span>
+								<div class="details-guarantee">
+									<div class="details-guarantee__row">
+										<div class="details-guarantee__col">
+											<span class="details-guarantee__title">Официальная гарантия бренда</span>
+											<span class="details-guarantee__num">2 года</span>
+										</div>
+										<div class="details-guarantee__col">
+											<span class="details-guarantee__title">Дополнительная гарантия магазина</span>
+											<span class="details-guarantee__num">+1 год</span>
+										</div>
+										<div class="details-guarantee__col details-guarantee__col_r">
+											<span class="details-guarantee__text">Официальная гарантия TAG Heuer сроком 2&nbsp;года действует по всему миру и&nbsp;дает право обслуживать часы в&nbsp;официальных сервисных центрах бренда TAG Heuer.</span>
+										</div>
+									</div>
+									<div class="details-guarantee-nav">
+										<div class="details-guarantee-nav__row">
+											<a href="#" class="details-guarantee-nav__item link link_underlined">Официальный гарантийный талон</a>
+											<a href="#" class="details-guarantee-nav__item link link_underlined">Сертификат дилера</a>
+											<a href="#" class="details-guarantee-nav__item link link_underlined">Условия возврата</a>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="details-group">
+							<div class="details-group" data-tab-target="3">
 								<span class="details-nav-m">НАЛИЧИЕ</span>
+								<div class="details-stores">
+									<span class="details-stores__title text-p">Магазины, доступные для самовывоза</span>
+									<div class="details-stores-head">
+										<div class="details-stores-head__row">
+											<div class="details-stores-head__col">
+												<span class="details-stores-head__title text-p">Магазин</span>
+											</div>
+											<div class="details-stores-head__col">
+												<span class="details-stores-head__title text-p">Наличие</span>
+											</div>
+										</div>
+									</div>
+									<div class="details-stores__row">
+										<div class="details-stores__col">
+											<div class="details-stores-list">
+												<div class="details-stores-list__item">
+													<div class="details-stores-list__row">
+														<div class="details-stores-list__col details-stores-list__col_about">
+															<span class="details-stores-list__title text-p">Четвертое измерение</span>
+															<span class="text-p"> ТЦ “Омега Плаза”<br> г. Москва, ул. Ленинская слобода, д. 19<br>
+																<a href="#" class="link link_underlined">на карте</a>
+															</span>
+														</div>
+														<div class="details-stores-list__col details-stores-list__col_amount">
+															<span class="details-stores-list__amount text-p">3 шт.</span>
+														</div>
+														<div class="details-stores-list__col details-stores-list__col_action">
+															<div class="details-stores-prices">
+																<div class="details-stores-prices__col">
+																	<span class="details-stores-prices__item details-stores-prices__item_new text-p">172 720 ₽</span>
+																</div>
+																<div class="details-stores-prices__col">
+																	<span class="details-stores-prices__item details-stores-prices__item_old text-p">180 000 ₽</span>
+																</div>
+															</div>
+															<button class="btn btn_sm btn_wide btn_primary">Купить</button>
+														</div>
+													</div>
+												</div>
+												<div class="details-stores-list__item">
+													<div class="details-stores-list__row">
+														<div class="details-stores-list__col details-stores-list__col_about">
+															<span class="details-stores-list__title text-p">Четвертое измерение</span>
+															<span class="text-p"> ТЦ “Омега Плаза”<br> г. Москва, ул. Ленинская слобода, д. 19<br>
+																<a href="#" class="link link_underlined">на карте</a>
+															</span>
+														</div>
+														<div class="details-stores-list__col details-stores-list__col_amount">
+															<span class="details-stores-list__amount text-p">3 шт.</span>
+														</div>
+														<div class="details-stores-list__col details-stores-list__col_action">
+															<div class="details-stores-prices">
+																<div class="details-stores-prices__col">
+																	<span class="details-stores-prices__item details-stores-prices__item_new text-p">172 720 ₽</span>
+																</div>
+																<div class="details-stores-prices__col">
+																	<span class="details-stores-prices__item details-stores-prices__item_old text-p">180 000 ₽</span>
+																</div>
+															</div>
+															<button class="btn btn_sm btn_wide btn_primary">Купить</button>
+														</div>
+													</div>
+												</div>
+												<div class="details-stores-list__item">
+													<div class="details-stores-list__row">
+														<div class="details-stores-list__col details-stores-list__col_about">
+															<span class="details-stores-list__title text-p">Четвертое измерение</span>
+															<span class="text-p"> ТЦ “Омега Плаза”<br> г. Москва, ул. Ленинская слобода, д. 19<br>
+																<a href="#" class="link link_underlined">на карте</a>
+															</span>
+														</div>
+														<div class="details-stores-list__col details-stores-list__col_amount">
+															<span class="details-stores-list__amount text-p">3 шт.</span>
+														</div>
+														<div class="details-stores-list__col details-stores-list__col_action">
+															<div class="details-stores-prices">
+																<div class="details-stores-prices__col">
+																	<span class="details-stores-prices__item details-stores-prices__item_new text-p">172 720 ₽</span>
+																</div>
+																<div class="details-stores-prices__col">
+																	<span class="details-stores-prices__item details-stores-prices__item_old text-p">180 000 ₽</span>
+																</div>
+															</div>
+															<button class="btn btn_sm btn_wide btn_primary">Купить</button>
+														</div>
+													</div>
+												</div>
+												<div class="details-stores-list__item">
+													<div class="details-stores-list__row">
+														<div class="details-stores-list__col details-stores-list__col_about">
+															<span class="details-stores-list__title text-p">Четвертое измерение</span>
+															<span class="text-p"> ТЦ “Омега Плаза”<br> г. Москва, ул. Ленинская слобода, д. 19<br>
+																<a href="#" class="link link_underlined">на карте</a>
+															</span>
+														</div>
+														<div class="details-stores-list__col details-stores-list__col_amount">
+															<span class="details-stores-list__amount text-p">3 шт.</span>
+														</div>
+														<div class="details-stores-list__col details-stores-list__col_action">
+															<div class="details-stores-prices">
+																<div class="details-stores-prices__col">
+																	<span class="details-stores-prices__item details-stores-prices__item_new text-p">172 720 ₽</span>
+																</div>
+																<div class="details-stores-prices__col">
+																	<span class="details-stores-prices__item details-stores-prices__item_old text-p">180 000 ₽</span>
+																</div>
+															</div>
+															<button class="btn btn_sm btn_wide btn_primary">Купить</button>
+														</div>
+													</div>
+												</div>
+												<div class="details-stores-list__item">
+													<div class="details-stores-list__row">
+														<div class="details-stores-list__col details-stores-list__col_about">
+															<span class="details-stores-list__title text-p">Четвертое измерение</span>
+															<span class="text-p"> ТЦ “Омега Плаза”<br> г. Москва, ул. Ленинская слобода, д. 19<br>
+																<a href="#" class="link link_underlined">на карте</a>
+															</span>
+														</div>
+														<div class="details-stores-list__col details-stores-list__col_amount">
+															<span class="details-stores-list__amount text-p">3 шт.</span>
+														</div>
+														<div class="details-stores-list__col details-stores-list__col_action">
+															<div class="details-stores-prices">
+																<div class="details-stores-prices__col">
+																	<span class="details-stores-prices__item details-stores-prices__item_new text-p">172 720 ₽</span>
+																</div>
+																<div class="details-stores-prices__col">
+																	<span class="details-stores-prices__item details-stores-prices__item_old text-p">180 000 ₽</span>
+																</div>
+															</div>
+															<button class="btn btn_sm btn_wide btn_primary">Купить</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="details-stores__col">
+											<div class="details-stores__map">
+												<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A10cfa5909df455c65bf7f6dd6c6bdc59cb351043c75c4e8625abe69d2069359f&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="details-group">
+							<div class="details-group" data-tab-target="4">
 								<span class="details-nav-m">Доставка</span>
+								<div class="details-delivery">
+									<div class="details-delivery-head">
+										<span class="details-delivery-head__item text-p">Доставка по городу: <strong>Москва</strong></span>
+										<span class="details-delivery-head__item text-p">
+											<a href="#" class="link link-underlined">изменить город</a>
+										</span>
+									</div>
+									<div class="details-delivery__row">
+										<div class="details-delivery__col">
+											<div class="details-delivery-time">
+												<span class="details-delivery-time__title">Срок доставки: 3 дня</span>
+												<div class="details-delivery-time__row">
+													<div class="details-delivery-time__col">
+														<span class="text-p">При заказе свыше 5000 ₽<br> <strong>бесплатно</strong></span>
+													</div>
+													<div class="details-delivery-time__col">
+														<span class="text-p">При заказе до 5000 ₽<br> <strong>265 ₽</strong></span>
+													</div>
+												</div>
+												<span class="details-delivery-time__info text-p">Товар может быть доставлен, как курьером на указанный адрес, так и в точку выдачи (выбрать наиболее подходящую можно при оформлении заказа).</span>
+											</div>
+										</div>
+										<div class="details-delivery__col">
+											<div class="details-delivery-list text-p">
+												<div class="tooltip details-delivery-list__tooltip">
+													<i class="tooltip-icon"></i>
+													<div class="tooltip-drop">
+														<span class="tooltip-drop__text">Tooltip text here</span>
+													</div>
+												</div>
+												<span class="details-delivery-list__title">В случае доставки часов курьером Вам будут доступны следующие опции:</span>
+												<span class="details-delivery-list__item">Оплата курьеру после примерки и осмотра</span>
+												<span class="details-delivery-list__item">Возврат и обмен, если часы не подошли</span>
+												<span class="details-delivery-list__item">Оплата наличными. <a href="#" class="link link_underlined">Все способы оплаты</a></span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--<div class="details-delivery">
+									<div class="details-delivery-head">
+										<span class="details-delivery-head__item text-p">Доставка по городу: <strong>Урюпинск</strong></span>
+
+										<span class="details-delivery-head__item text-p">
+											<a href="#" class="link link-underlined">изменить город</a>
+										</span>
+									</div>
+
+									<div class="details-delivery__row">
+										<div class="details-delivery__col">
+											<div class="details-delivery-time">
+												<span class="details-delivery-time__title">Срок доставки: 3 дня</span>
+
+												<div class="details-delivery-time__row">
+													<div class="details-delivery-time__col">
+														<span class="text-p">При заказе свыше 5000 ₽<br> <strong>бесплатно</strong></span>
+													</div>
+
+													<div class="details-delivery-time__col">
+														<span class="text-p">При заказе до 5000 ₽<br> <strong>265 ₽</strong></span>
+													</div>
+												</div>
+
+												<span class="details-delivery-time__info text-p">Сразу после оформления заказа Вы сможете отслеживать Ваш заказ в личном кабинете.</span>
+											</div>
+										</div>
+
+										<div class="details-delivery__col">
+											<div class="details-delivery-list text-p">
+												<div class="tooltip details-delivery-list__tooltip">
+													<i class="tooltip-icon"></i>
+													<div class="tooltip-drop">
+														<span class="tooltip-drop__text">Tooltip text here</span>
+													</div>
+												</div>
+
+												<span class="details-delivery-list__title">Заказы по России мы доставляем через:</span>
+
+												<span class="details-delivery-list__item">Службы доставки: СДЭК, DPD, Деловые линии, DHL.</span>
+												<span class="details-delivery-list__item">Постаматы: Постмастер</span>
+												<span class="details-delivery-list__item">Пункты выдачи: Boxberry</span>
+											</div>
+										</div>
+									</div>
+								</div>-->
 							</div>
-							<div class="details-group">
+							<div class="details-group" data-tab-target="5">
 								<span class="details-nav-m">ОПЛАТА</span>
+								<div class="details-payment">
+									<span class="details-payment__title text-p">Доступные способы оплаты:</span>
+									<div class="details-payment__row">
+										<div class="details-payment__col details-payment__col_2">
+											<div class="faq">
+												<div class="faq__item">
+													<span class="faq__title">Наличными при доставке курьером, либо при самовывозе</span>
+													<div class="faq__content">
+														<span class="faq__text"> Выберите «оплата наличными».<br> Оплата осуществляется после проверки качества и комплектности товара. При получении междугороднего заказа проверяйте наличие пломбы на посылке (целостность упаковки).<br> Если упаковка повреждена, составляется акт в присутствии руководителя почтового отделения (получение на почте) или курьера, и в случае дефекта товара или некомплектности вы имеете право отказаться от получения посылки. </span>
+													</div>
+												</div>
+												<div class="faq__item">
+													<span class="faq__title">Оплата онлайн банковской картой</span>
+													<div class="faq__content">
+														<span class="faq__text">Текст</span>
+													</div>
+												</div>
+												<div class="faq__item">
+													<span class="faq__title">Онлайн в рассрочку от Tinkoff</span>
+													<div class="faq__content">
+														<span class="faq__text">Текст</span>
+													</div>
+												</div>
+												<div class="faq__item">
+													<span class="faq__title">Покупай со Сбербанком (кредит без переплаты) онлайн</span>
+													<div class="faq__content">
+														<span class="faq__text">Текст</span>
+													</div>
+												</div>
+												<div class="faq__item">
+													<span class="faq__title">Яндекс.Касса: Яндекс.Деньги</span>
+													<div class="faq__content">
+														<span class="faq__text">Текст</span>
+													</div>
+												</div>
+												<div class="faq__item">
+													<span class="faq__title">Рассрочка и кредит в салонах без похода в банк</span>
+													<div class="faq__content">
+														<span class="faq__text">Текст</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="details-payment__col details-payment__col_1">
+											<span class="details-payment__info text-p">Удобный способ оплаты Вы сможете выбрать при оформлении заказа. Регистрация на сайте не обязательна.</span>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="details-group">
+							<div class="details-group" data-tab-target="6">
 								<span class="details-nav-m">Отзывы (6)</span>
+								<div class="details-reviews">
+									<div class="details-reviews__row">
+										<div class="details-reviews__col details-reviews__col_2">
+											<div class="reviews-nav reviews-nav_card">
+												<div class="reviews-nav__row">
+													<div class="reviews-nav__col">
+														<div class="reviews-sort">
+															<div class="reviews-sort__col">
+																<select class="reviews-sort__select">
+																	<option value="">По дате</option>
+																	<option value="">По дате</option>
+																</select>
+															</div>
+															<div class="reviews-sort__col">
+																<select class="reviews-sort__select">
+																	<option value="">По оценке</option>
+																	<option value="">По оценке</option>
+																</select>
+															</div>
+															<div class="reviews-sort__col">
+																<label class="checkbox">
+																	<input type="checkbox" class="checkbox__input" name="">
+																	<div class="checkbox-icon">
+																		<svg class="checkbox-icon__svg">
+																			<use xlink:href="./img/sprite.svg#check"></use>
+																		</svg>
+																	</div>
+																	<span class="checkbox__text">Отзывы с фото</span>
+																</label>
+															</div>
+														</div>
+													</div>
+													<div class="reviews-nav__col">
+														<span class="reviews-nav__link">ОСТАВИТЬ ОТЗЫВ</span>
+													</div>
+												</div>
+											</div>
+											<div class="details-reviews-list">
+												<div class="details-reviews-list__item">
+													<div class="card-reviews-item">
+														<div class="card-reviews-head">
+															<div class="card-reviews-head__col">
+																<strong class="card-reviews-head__text">Пилясова Ольга Владимировна</strong>
+															</div>
+															<div class="card-reviews-head__col">
+																<span class="card-reviews-head__text">12 мая 2020 г.</span>
+															</div>
+															<div class="card-reviews-head__col">
+																<div class="rating">
+																	<svg class="rating__item is-filled">
+																		<use xlink:href="./img/sprite.svg#star"></use>
+																	</svg>
+																	<svg class="rating__item is-filled">
+																		<use xlink:href="./img/sprite.svg#star"></use>
+																	</svg>
+																	<svg class="rating__item is-filled">
+																		<use xlink:href="./img/sprite.svg#star"></use>
+																	</svg>
+																	<svg class="rating__item is-filled">
+																		<use xlink:href="./img/sprite.svg#star"></use>
+																	</svg>
+																	<svg class="rating__item is-filled">
+																		<use xlink:href="./img/sprite.svg#star"></use>
+																	</svg>
+																</div>
+															</div>
+														</div>
+														<p class="card-reviews__text">Нижний Новгород. Огромное спасибо менеджеру сайта "4 Измерение" за её внимательность, вежливость и терпение. Очень качественное обслуживание и грамотная консультация по телефону.</p>
+														<div class="card-reviews-container">
+															<div class="card-reviews-gallery">
+																<div class="card-reviews-gallery__col">
+																	<a href="#" class="card-reviews-gallery__item">
+																		<img src="./pic/reviews-1-1.jpg" alt="" class="img-cover">
+																	</a>
+																</div>
+																<div class="card-reviews-gallery__col">
+																	<a href="#" class="card-reviews-gallery__item">
+																		<img src="./pic/reviews-1-2.jpg" alt="" class="img-cover">
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="details-reviews-message">
+												<div class="details-reviews-message__row">
+													<div class="details-reviews-message__col details-reviews-message__col_head">
+														<span class="contacts-message__title">ОСТАВЬТЕ ОТЗЫВ</span>
+													</div>
+													<div class="details-reviews-message__col details-reviews-message__col_form">
+														<div class="contacts-message__field">
+															<div class="field">
+																<label class="field__label">
+																	<span class="field__title">Имя</span>
+																	<input type="text" class="field__input" value="">
+																</label>
+															</div>
+														</div>
+														<div class="contacts-message__field">
+															<div class="contacts-message-list">
+																<div class="contacts-message-list__item">
+																	<div class="contacts-message-rating">
+																		<div class="contacts-message-rating__col" style="min-width: 142px">
+																			<span class="contacts-message-rating__text">Внешний вид:</span>
+																		</div>
+																		<div class="contacts-message-rating__col">
+																			<div class="rating">
+																				<svg class="rating__item is-empty">
+																					<use xlink:href="./img/sprite.svg#star"></use>
+																				</svg>
+																				<svg class="rating__item is-empty">
+																					<use xlink:href="./img/sprite.svg#star"></use>
+																				</svg>
+																				<svg class="rating__item is-empty">
+																					<use xlink:href="./img/sprite.svg#star"></use>
+																				</svg>
+																				<svg class="rating__item is-empty">
+																					<use xlink:href="./img/sprite.svg#star"></use>
+																				</svg>
+																				<svg class="rating__item is-empty">
+																					<use xlink:href="./img/sprite.svg#star"></use>
+																				</svg>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="contacts-message-list__item">
+																	<div class="contacts-message-rating">
+																		<div class="contacts-message-rating__col" style="min-width: 142px">
+																			<span class="contacts-message-rating__text">Функциональность:</span>
+																		</div>
+																		<div class="contacts-message-rating__col">
+																			<div class="rating">
+																				<svg class="rating__item is-empty">
+																					<use xlink:href="./img/sprite.svg#star"></use>
+																				</svg>
+																				<svg class="rating__item is-empty">
+																					<use xlink:href="./img/sprite.svg#star"></use>
+																				</svg>
+																				<svg class="rating__item is-empty">
+																					<use xlink:href="./img/sprite.svg#star"></use>
+																				</svg>
+																				<svg class="rating__item is-empty">
+																					<use xlink:href="./img/sprite.svg#star"></use>
+																				</svg>
+																				<svg class="rating__item is-empty">
+																					<use xlink:href="./img/sprite.svg#star"></use>
+																				</svg>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="contacts-message-list__item">
+																	<div class="contacts-message-rating">
+																		<div class="contacts-message-rating__col" style="min-width: 142px">
+																			<span class="contacts-message-rating__text">Надежность:</span>
+																		</div>
+																		<div class="contacts-message-rating__col">
+																			<div class="rating">
+																				<svg class="rating__item is-empty">
+																					<use xlink:href="./img/sprite.svg#star"></use>
+																				</svg>
+																				<svg class="rating__item is-empty">
+																					<use xlink:href="./img/sprite.svg#star"></use>
+																				</svg>
+																				<svg class="rating__item is-empty">
+																					<use xlink:href="./img/sprite.svg#star"></use>
+																				</svg>
+																				<svg class="rating__item is-empty">
+																					<use xlink:href="./img/sprite.svg#star"></use>
+																				</svg>
+																				<svg class="rating__item is-empty">
+																					<use xlink:href="./img/sprite.svg#star"></use>
+																				</svg>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="contacts-message__field">
+															<div class="field">
+																<label class="field__label">
+																	<span class="field__title">Отзыв</span>
+																	<textarea class="field__textarea" rows="4"></textarea>
+																</label>
+															</div>
+														</div>
+														<div class="contacts-message__field">
+															<div class="field">
+																<label class="field__label">
+																	<span class="field__title">Достоинства</span>
+																	<textarea class="field__textarea" rows="2"></textarea>
+																</label>
+															</div>
+														</div>
+														<div class="contacts-message__field">
+															<div class="field">
+																<label class="field__label">
+																	<span class="field__title">Недостатки</span>
+																	<textarea class="field__textarea" rows="2"></textarea>
+																</label>
+															</div>
+														</div>
+														<div class="contacts-message__field">
+															<div class="field">
+																<label class="btn btn_sm btn_secondary field__upload" for="upload-photo">Загрузить Фото</label>
+																<input type="file" class="field__file" id="upload-photo">
+															</div>
+														</div>
+														<div class="contacts-message__field">
+															<img src="./pic/captcha.png" alt="" class="img-captcha">
+														</div>
+														<button class="btn btn_red btn_md contacts-message__btn">Отправить отзыв</button>
+														<span class="contacts-message__agreement"> Нажимая на кнопку «Отправить заказ»<br> вы соглашаетесь с <a href="#" class="link link_underlined">политикой конфиденциальности</a>. </span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="details-reviews__col details-reviews__col_1">
+											<div class="yandex-market details-reviews__yandex">
+												<img src="./pic/yandex-logo.png" class="yandex-market__logo" alt="">
+												<span class="yandex-market__text text-p">Мы занимаем самый высокий рейтинг на&nbsp;<a href="#" class="link link_underlined"></a>Яндекс.Маркете</span>
+												<span class="yandex-market__text text-p">2568 отзывов</span>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

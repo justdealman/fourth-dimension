@@ -521,6 +521,10 @@ $(function() {
         $(this).toggleClass('is-active');
     });
 
+    $('.details-nav-m').on('click', function() {
+        $(this).toggleClass('is-active');
+    });
+
     $('[data-color-val]').on('click', function() {
         var $t = $(this),
             color = $t.attr('data-color-val'),
